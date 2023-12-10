@@ -1,0 +1,20 @@
+.link-color:link {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  .link-color:visited {
+    color: pink;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  .link-color:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  .link-color:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+  }

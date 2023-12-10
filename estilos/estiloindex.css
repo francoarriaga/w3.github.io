@@ -1,0 +1,67 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  
+    margin: 0;
+    background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+    background-image: radial-gradient(circle at -14.09% 20.12%, #00825f 0, #00826e 3.33%, #00837c 6.67%, #00838b 10%, #008298 13.33%, #0082a5 16.67%, #0081b1 20%, #0080bb 23.33%, #007ec4 26.67%, #007ccc 30%, #0079d1 33.33%, #0076d4 36.67%, #0072d5 40%, #006dd4 43.33%, #1f68d1 46.67%, #5062cc 50%, #6c5bc5 53.33%, #8254bc 56.67%, #944db2 60%, #a345a7 63.33%, #af3d9a 66.67%, #b8378d 70%, #bf317f 73.33%, #c42d71 76.67%, #c62d63 80%, #c72f55 83.33%, #c63347 86.67%, #c2393a 90%, #be402d 93.33%, #b84720 96.67%, #b04e10 100%);
+  }
+
+
+  
+  .prin1 {
+    font-family: "Sofia", sans-serif;
+    font-size: 30px;
+    text-shadow: 3px 3px 3px #ababab;
+    text-align: center;
+   margin-bottom: 10vh;
+  }
+  
+  .principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .uno {
+    margin: 20px; /* Ajusta el espacio entre cada elemento según tus necesidades */
+    text-align: center;
+    
+  }
+  .uno:hover{
+	
+	transform: translateY(-3%);
+    
+}
+  img {
+    max-width: 100%; /* Ajusta el tamaño de la imagen según tus necesidades */
+    border-radius: 6px;
+  }
+  
+  .desc {
+    margin-top: 10px;
+    text-align: justify;
+  }
+  div.uno:hover {
+    border: 1px solid #777;
+  }
+  a{
+    text-decoration: none;
+    color: black;
+  }
+
+  @media only screen and (max-width: 800px) {
+    /* Agrega estilos específicos para pantallas de 800px o menos */
+    .principal {
+        flex-direction: column; /* Cambia la dirección del flex a columna */
+        align-items: center; /* Centra los elementos en el eje transversal */
+    }
+    .uno {
+        margin-bottom: 20px; /* Ajusta el espaciado entre las imágenes */
+    }
+}
