@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button type="button"><a href="../indic.html">Regresar</a></button> 
+    <h1>° CSS Border images</h1>
+
+    <h2>Create a image border around an element</h2>
+    <p>Here, the middle sections of the image are repeated to create the border:</p>
+    <p id="borderimg" style="border: 10px solid transparent;
+    padding: 15px;
+    border-image: url('../medios/borderimg.png') 30 round;">border-image: url(border.png) 30 round;</p>
+    <p>Here is the original image:</p><img src="../medios/borderimg.png">
+    <p><strong>Note:</strong> Internet Explorer 10, and earlier versions, do not support the border-image property.</p>
+
+    <h2>Border with stretch keyword</h2>
+    <p>Here, the middle sections of the image are repeated to create the border:</p>
+    <p id="borderimg" style="border: 10px solid transparent;
+    padding: 15px;
+    border-image: url('../medios/borderimg.png') 30 stretch;">border-image: url(border.png) 30 round;</p>
+    <p>Here is the original image:</p><img src="../medios/borderimg.png">
+    <p><strong>Note:</strong> Internet Explorer 10, and earlier versions, do not support the border-image property.</p>
+
+    <h2>Image border -different slice values</h2>
+    <p id="borderimg1" style="border: 10px solid transparent;
+    padding: 15px;
+    border-image: url('../medios/borderimg.png') 50 round;">border-image: url(border.png) 50 round;</p>
+    <p id="borderimg2" style="  border: 10px solid transparent;
+    padding: 15px;
+    border-image: url('../medios/borderimg.png') 20% round;">border-image: url(border.png) 20% round;</p>
+    <p id="borderimg3" style="  border: 10px solid transparent;
+    padding: 15px;
+    border-image: url('../medios/borderimg.png') 30% round;">border-image: url(border.png) 30% round;</p>
+</body>
+</html>

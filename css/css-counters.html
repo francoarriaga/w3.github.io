@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+  counter-reset: section;
+}
+
+h3::before {
+  counter-increment: section;
+  content: "Section " counter(section) ": ";
+}
+/**/
+.nest1{
+  counter-reset: subsection;
+}
+
+.nest1::before {
+  counter-increment: section;
+  content: "Section " counter(section) ". ";
+}
+
+.nest2::before {
+  counter-increment: subsection;
+  content: counter(section) "." counter(subsection) " ";
+}
+/**/
+.arti{
+  counter-reset: subsection;
+}
+ol {
+  counter-reset: section;
+  list-style-type: none;
+}
+
+li::before {
+  counter-increment: section;
+  content: counters(section,".") " ";
+}
+    </style>
+</head>
+<body>
+  <button type="button"><a href="../indic.html">Regresar</a></button> 
+    <h1>° CSS Counters</h1>
+
+    <h2>Create counter</h2>
+        <h3>pepino</h3>
+        <h3>sandia</h3>
+        <h3>manzana</h3>
+        <h3>pera</h3>
+
+    <h2>Nested counters 1</h2>
+    <h2 class="nest1">HTML/CSS Tutorials</h1>
+        <h3 class="nest2">pepino</h3>
+        <h3 class="nest2">sandia</h3>
+        <h3 class="nest2">manzana</h3>
+        <h3 class="nest2">pera</h3>
+
+     <h2 class="nest1">HTML/CSS Tutorials</h1>
+            <h3 class="nest2">pepino</h3>
+            <h3 class="nest2">sandia</h3>
+            <h3 class="nest2">manzana</h3>
+            <h3 class="nest2">pera</h3>
+
+    <h2>Nested counters 2</h2>
+    <h3 class="arti">Articulos</h3>
+    <ol>
+        <li>item</li>
+        <li>item   
+        <ol>
+          <li>item</li>
+          <li>item</li>
+          <li>item
+          <ol>
+            <li>item</li>
+            <li>item</li>
+            <li>item</li>
+          </ol>
+          </li>
+          <li>item</li>
+        </ol>
+        </li>
+        <li>item</li>
+        <li>item</li>
+      </ol>
+      
+      <ol>
+        <li>item</li>
+        <li>item</li>
+      </ol>
+</body>
+</html>

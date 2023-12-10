@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+div.margen1 {
+  border: 1px solid black;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-right: 150px;
+  margin-left: 80px;
+  background-color: lightblue;
+}
+div.margen2 {
+  border: 1px solid black;
+  margin: 25px 50px 75px 100px;
+  background-color: lightblue;
+}
+div.margen3 {
+  border: 1px solid black;
+  margin: 25px 50px;
+  background-color: lightblue;
+}
+div {
+  border: 1px solid black;
+  margin: 25px;
+  background-color: lightblue;
+}
+div.margen5{
+  width: 300px;
+  margin: auto;
+  border: 1px solid red;
+}
+div.margen6 {
+  border: 1px solid red;
+  margin-left: 100px;
+}
+
+p.margen7 {
+  margin-left: inherit;
+}
+    </style>
+</head>
+<body>
+  <button type="button"><a href="../indic.html">Regresar</a></button> 
+    <h1>° CSS Margins</h1>
+
+    <h2>Set different margins for each side</h2>
+    <div class="margen1">This div element has a top margin of 100px, a right margin of 150px, a bottom margin of 100px, and a left margin of 80px.</div>
+
+    <h2>All sides of different margins</h2>
+    <div class="margen2">This div element has a top margin of 25px, a right margin of 50px, a bottom margin of 75px, and a left margin of 100px.</div>
+
+    <h2>Margins with two values</h2>
+    <div class="margen3">This div element has a top and bottom margin of 25px, and a right and left margin of 50px.</div>
+
+    <h2>Margins with only 1 value</h2>
+    <div class="margen4">This div element has a top, bottom, left, and right margin of 25px.</div>
+    <h2>Automatic margin</h2>
+    <p>Puede configurar la propiedad de margen en automático para centrar horizontalmente el elemento dentro de su contenedor. El elemento ocupará entonces el ancho especificado y el espacio restante se dividirá en partes iguales entre los márgenes izquierdo y derecho:</p>
+    <div class="margen5">
+        This div will be horizontally centered because it has margin: auto;
+    </div>
+
+    <h2>Inherited margin</h2>
+    <p>Deje que el margen izquierdo se herede del elemento padre:</p>
+    <div class="margen6">
+        <p class="margen7">This paragraph has an inherited left margin (from the div element).</p>
+        </div>
+</body>
+</html>

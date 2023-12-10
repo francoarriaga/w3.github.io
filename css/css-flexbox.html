@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .first1 {
+  -webkit-order: -1;
+  order: -1;
+}
+/**/
+.flex-container3 {
+  display: -webkit-flex;
+  display: flex;
+  width: 400px;
+  height: 250px;
+  background-color: lightgrey;
+}
+
+.flex-item4 {
+  background-color: cornflowerblue;
+  width: 60px;
+  min-height: 100px;
+  margin: 10px;
+}
+
+.item5 {
+  -webkit-align-self: flex-start;
+  align-self: flex-start;
+}
+.item6 {
+  -webkit-align-self: flex-end;
+  align-self: flex-end;
+}
+
+.item7 {
+  -webkit-align-self: center;
+  align-self: center;
+}
+
+.item8 {
+  -webkit-align-self: baseline;
+  align-self: baseline;
+}
+
+.item9 {
+  -webkit-align-self: stretch;
+  align-self: stretch;
+}
+
+/**/
+.flex-container10 {
+  display: -webkit-flex;
+  display: flex;
+  width: 400px;
+  height: 250px;
+  background-color: lightgrey;
+}
+
+.flex-item11 {
+  background-color: cornflowerblue;
+  margin: 10px;
+}
+
+.item12 {
+  -webkit-flex: 2;
+  flex: 2;
+}
+
+.item13 {
+  -webkit-flex: 1;
+  flex: 1;
+}
+
+.item14 {
+  -webkit-flex: 1;
+  flex: 1;
+}
+    </style>
+</head>
+<body>
+  <button type="button"><a href="../indic.html" style="float: left;">Regresar</a></button>
+    <h1>° CSS Flexbox</h1>
+
+    <h2>Flexbox with three flex items</h2>
+    <div class="flex-container" style="  display: -webkit-flex;
+    display: flex;
+    width: 400px;
+    height: 250px;
+    background-color: lightgrey;">
+        <div class="flex-item" style="background-color: cornflowerblue;
+        width: 100px;
+        height: 100px;
+        margin: 10px;">flex item 1</div>
+        <div class="flex-item" style="background-color: cornflowerblue;
+        width: 100px;
+        height: 100px;
+        margin: 10px;">flex item 2</div>
+        <div class="flex-item" style="background-color: cornflowerblue;
+        width: 100px;
+        height: 100px;
+        margin: 10px;">flex item 3</div>  
+      </div>
+
+      <h2>Flexbox with -rlt direction-</h2>
+      <div style="direction: rtl;">
+        <div class="flex-container" style="  display: -webkit-flex;
+        display: flex;
+        width: 400px;
+        height: 250px;
+        background-color: lightgrey;">
+          <div class="flex-item" style="  background-color: cornflowerblue;
+          width: 100px;
+          height: 100px;
+          margin: 10px;">flex item 1</div>
+          <div class="flex-item" style="  background-color: cornflowerblue;
+          width: 100px;
+          height: 100px;
+          margin: 10px;">flex item 2</div>
+          <div class="flex-item" style="  background-color: cornflowerblue;
+          width: 100px;
+          height: 100px;
+          margin: 10px;">flex item 3</div>  
+        </div>
+      </div>
+
+      <h2>Flex-direction -row reverse-</h2>
+      <div class="flex-container" style=" display: -webkit-flex;
+      display: flex;
+      -webkit-flex-direction: row-reverse;
+      flex-direction: row-reverse;
+      width: 400px;
+      height: 250px;
+      background-color: lightgrey;">
+        <div class="flex-item" style="  background-color: cornflowerblue;
+        width: 100px;
+        height: 100px;
+        margin: 10px;">flex item 1</div>
+        <div class="flex-item" style="  background-color: cornflowerblue;
+        width: 100px;
+        height: 100px;
+        margin: 10px;">flex item 2</div>
+        <div class="flex-item" style="  background-color: cornflowerblue;
+        width: 100px;
+        height: 100px;
+        margin: 10px;">flex item 3</div>  
+      </div>
+
+      <h2>Flex-direction -column-</h2>
+      <div class="flex-container" style=" display: -webkit-flex;
+      display: flex;
+      -webkit-flex-direction: column;;
+      flex-direction: column;
+      width: 400px;
+      height: 250px;
+      background-color: lightgrey;">
+        <div class="flex-item" style="  background-color: cornflowerblue;
+        width: 100px;
+        height: 100px;
+        margin: 10px;">flex item 1</div>
+        <div class="flex-item" style="  background-color: cornflowerblue;
+        width: 100px;
+        height: 100px;
+        margin: 10px;">flex item 2</div>
+        <div class="flex-item" style="  background-color: cornflowerblue;
+        width: 100px;
+        height: 100px;
+        margin: 10px;">flex item 3</div>  
+      </div>
+
+      <h2>Flex-direction -column-reverse-</h2>
+      <div class="flex-container" style=" display: -webkit-flex;
+      display: flex;
+      -webkit-flex-direction: column-reverse;
+      flex-direction: column-reverse;
+      width: 400px;
+      height: 250px;
+      background-color: lightgrey;">
+        <div class="flex-item" style="  background-color: cornflowerblue;
+        width: 100px;
+        height: 100px;
+        margin: 10px;">flex item 1</div>
+        <div class="flex-item" style="  background-color: cornflowerblue;
+        width: 100px;
+        height: 100px;
+        margin: 10px;">flex item 2</div>
+        <div class="flex-item" style="  background-color: cornflowerblue;
+        width: 100px;
+        height: 100px;
+        margin: 10px;">flex item 3</div>  
+      </div>
+
+        <h2>Justify content -flex-end-</h2>
+        <div class="flex-container" style="  display: -webkit-flex;
+        display: flex;
+        -webkit-justify-content: flex-end;
+        justify-content: flex-end;
+        width: 400px;
+        height: 250px;
+        background-color: lightgrey;">
+            <div class="flex-item" style="  background-color: cornflowerblue;
+            width: 100px;
+            height: 100px;
+            margin: 10px;">flex item 1</div>
+            <div class="flex-item" style="  background-color: cornflowerblue;
+            width: 100px;
+            height: 100px;
+            margin: 10px;">flex item 2</div>
+            <div class="flex-item" style="  background-color: cornflowerblue;
+            width: 100px;
+            height: 100px;
+            margin: 10px;">flex item 3</div>  
+          </div>
+      
+          <h2>Justify content -center-</h2>
+        <div class="flex-container" style="  display: -webkit-flex;
+        display: flex;
+        -webkit-justify-content: center;
+        justify-content: center;
+        width: 400px;
+        height: 250px;
+        background-color: lightgrey;">
+            <div class="flex-item" style="  background-color: cornflowerblue;
+            width: 100px;
+            height: 100px;
+            margin: 10px;">flex item 1</div>
+            <div class="flex-item" style="  background-color: cornflowerblue;
+            width: 100px;
+            height: 100px;
+            margin: 10px;">flex item 2</div>
+            <div class="flex-item" style="  background-color: cornflowerblue;
+            width: 100px;
+            height: 100px;
+            margin: 10px;">flex item 3</div>  
+          </div>
+
+          <h2>Justify content -space-beetween-</h2>
+        <div class="flex-container" style="  display: -webkit-flex;
+        display: flex;
+        -webkit-justify-content: space-between;
+        justify-content:space-between;
+        width: 400px;
+        height: 250px;
+        background-color: lightgrey;">
+            <div class="flex-item" style="  background-color: cornflowerblue;
+            width: 100px;
+            height: 100px;
+            margin: 10px;">flex item 1</div>
+            <div class="flex-item" style="  background-color: cornflowerblue;
+            width: 100px;
+            height: 100px;
+            margin: 10px;">flex item 2</div>
+            <div class="flex-item" style="  background-color: cornflowerblue;
+            width: 100px;
+            height: 100px;
+            margin: 10px;">flex item 3</div>  
+          </div>
+
+          <h2>Justify content -space-around-</h2>
+          <div class="flex-container" style="  display: -webkit-flex;
+          display: flex;
+          -webkit-justify-content: space-around;
+          justify-content:space-around;
+          width: 400px;
+          height: 250px;
+          background-color: lightgrey;">
+              <div class="flex-item" style="  background-color: cornflowerblue;
+              width: 100px;
+              height: 100px;
+              margin: 10px;">flex item 1</div>
+              <div class="flex-item" style="  background-color: cornflowerblue;
+              width: 100px;
+              height: 100px;
+              margin: 10px;">flex item 2</div>
+              <div class="flex-item" style="  background-color: cornflowerblue;
+              width: 100px;
+              height: 100px;
+              margin: 10px;">flex item 3</div>  
+            </div>
+
+            <h2>Align items -stretch-</h2>
+            <div class="flex-container" style="  display: -webkit-flex;
+            display: flex;
+            -webkit-align-items: stretch;
+            align-items: stretch;
+            width: 400px;
+            height: 250px;
+            background-color: lightgrey;">
+                <div class="flex-item" style="  background-color: cornflowerblue;
+                width: 100px;
+                margin: 10px;">flex item 1</div>
+                <div class="flex-item" style="  background-color: cornflowerblue;
+                width: 100px;
+                margin: 10px;">flex item 2</div>
+                <div class="flex-item" style="  background-color: cornflowerblue;
+                width: 100px;
+                margin: 10px;">flex item 3</div>  
+              </div>
+
+              <h2>Align items -flex-start-</h2>
+                    <div class="flex-container" style="  display: -webkit-flex;
+                    display: flex;
+                    -webkit-align-items: flex-start;
+                    align-items: flex-start;
+                    width: 400px;
+                    height: 250px;
+                    background-color: lightgrey;">
+                    <div class="flex-item" style="  background-color: cornflowerblue;
+                    width: 100px;
+                    margin: 10px;">flex item 1</div>
+                    <div class="flex-item" style="  background-color: cornflowerblue;
+                    width: 100px;
+                    margin: 10px;">flex item 2</div>
+                    <div class="flex-item" style="  background-color: cornflowerblue;
+                    width: 100px;
+                    margin: 10px;">flex item 3</div>  
+                </div>
+
+                <h2>Align items -flex-end-</h2>
+                    <div class="flex-container" style="  display: -webkit-flex;
+                    display: flex;
+                    -webkit-align-items: flex-end;
+                    align-items: flex-end;
+                    width: 400px;
+                    height: 250px;
+                    background-color: lightgrey;">
+                    <div class="flex-item" style="  background-color: cornflowerblue;
+                    width: 100px;
+                    margin: 10px;">flex item 1</div>
+                    <div class="flex-item" style="  background-color: cornflowerblue;
+                    width: 100px;
+                    margin: 10px;">flex item 2</div>
+                    <div class="flex-item" style="  background-color: cornflowerblue;
+                    width: 100px;
+                    margin: 10px;">flex item 3</div>  
+                </div>
+
+                <h2>Align items -center-</h2>
+                    <div class="flex-container" style="  display: -webkit-flex;
+                    display: flex;
+                    -webkit-align-items: center;
+                    align-items: center;
+                    width: 400px;
+                    height: 250px;
+                    background-color: lightgrey;">
+                    <div class="flex-item" style="  background-color: cornflowerblue;
+                    width: 100px;
+                    margin: 10px;">flex item 1</div>
+                    <div class="flex-item" style="  background-color: cornflowerblue;
+                    width: 100px;
+                    margin: 10px;">flex item 2</div>
+                    <div class="flex-item" style="  background-color: cornflowerblue;
+                    width: 100px;
+                    margin: 10px;">flex item 3</div>  
+                </div>
+
+                <h2>Align items -baseline-</h2>
+                    <div class="flex-container" style="  display: -webkit-flex;
+                    display: flex;
+                    -webkit-align-items: baseline;
+                    align-items: baseline;
+                    width: 400px;
+                    height: 250px;
+                    background-color: lightgrey;">
+                    <div class="flex-item" style="  background-color: cornflowerblue;
+                    width: 100px;
+                    margin: 10px;">flex item 1</div>
+                    <div class="flex-item" style="  background-color: cornflowerblue;
+                    width: 100px;
+                    margin: 10px;">flex item 2</div>
+                    <div class="flex-item" style="  background-color: cornflowerblue;
+                    width: 100px;
+                    margin: 10px;">flex item 3</div>  
+                </div>
+
+                <h2>Flex-wrap -nowrap-</h2>
+                <div class="flex-container" style="  display: -webkit-flex;
+                display: flex;
+                -webkit-flex-wrap: nowrap;
+                flex-wrap: nowrap;
+                width: 300px;
+                height: 250px;
+                background-color: lightgrey;">
+                    <div class="flex-item" style="  background-color: cornflowerblue;
+                    width: 100px;
+                    height: 100px;
+                    margin: 10px;">flex item 1</div>
+                    <div class="flex-item" style="  background-color: cornflowerblue;
+                    width: 100px;
+                    height: 100px;
+                    margin: 10px;">flex item 2</div>
+                    <div class="flex-item" style="  background-color: cornflowerblue;
+                    width: 100px;
+                    height: 100px;
+                    margin: 10px;">flex item 3</div>  
+                  </div>
+
+                  <h2>Flex-wrap -wrap-</h2>
+                <div class="flex-container" style="  display: -webkit-flex;
+                display: flex;
+                -webkit-flex-wrap: wrap;
+                flex-wrap: wrap;
+                width: 300px;
+                height: 250px;
+                background-color: lightgrey;">
+                    <div class="flex-item" style="  background-color: cornflowerblue;
+                    width: 100px;
+                    height: 100px;
+                    margin: 10px;">flex item 1</div>
+                    <div class="flex-item" style="  background-color: cornflowerblue;
+                    width: 100px;
+                    height: 100px;
+                    margin: 10px;">flex item 2</div>
+                    <div class="flex-item" style="  background-color: cornflowerblue;
+                    width: 100px;
+                    height: 100px;
+                    margin: 10px;">flex item 3</div>  
+                  </div>
+
+                  <h2>Flex-wrap -wrap-reverse-</h2>
+                <div class="flex-container" style="  display: -webkit-flex;
+                display: flex;
+                -webkit-flex-wrap:  wrap-reverse;
+                flex-wrap: wrap-reverse;
+                width: 300px;
+                height: 250px;
+                background-color: lightgrey;">
+                    <div class="flex-item" style="  background-color: cornflowerblue;
+                    width: 100px;
+                    height: 100px;
+                    margin: 10px;">flex item 1</div>
+                    <div class="flex-item" style="  background-color: cornflowerblue;
+                    width: 100px;
+                    height: 100px;
+                    margin: 10px;">flex item 2</div>
+                    <div class="flex-item" style="  background-color: cornflowerblue;
+                    width: 100px;
+                    height: 100px;
+                    margin: 10px;">flex item 3</div>  
+                  </div>
+
+                  <h2>Align content -center-</h2>
+                  <div class="flex-container" style="  display: -webkit-flex;
+                  display: flex;
+                  -webkit-flex-wrap: wrap;
+                  flex-wrap: wrap;
+                  -webkit-align-content: center;
+                  align-content: center;
+                  width: 300px;
+                  height: 300px;
+                  background-color: lightgrey;">
+                    <div class="flex-item" style="  background-color: cornflowerblue;
+                    width: 100px;
+                    height: 100px;
+                    margin: 10px;">flex item 1</div>
+                    <div class="flex-item" style="  background-color: cornflowerblue;
+                    width: 100px;
+                    height: 100px;
+                    margin: 10px;">flex item 2</div>
+                    <div class="flex-item" style="  background-color: cornflowerblue;
+                    width: 100px;
+                    height: 100px;
+                    margin: 10px;">flex item 3</div>  
+                  </div>
+
+                  <h2>Flex order</h2>
+                  <div class="flex-container" style="  display: -webkit-flex;
+                  display: flex;
+                  width: 400px;
+                  height: 250px;
+                  background-color: lightgrey;
+                  ">
+                    <div class="flex-item" style="  background-color: cornflowerblue;
+                    width: 100px;
+                    height: 100px;
+                    margin: 10px;">flex item 1</div>
+                    <div class="flex-item first1" style="  background-color: cornflowerblue;
+                    width: 100px;
+                    height: 100px;
+                    margin: 10px;">flex item 2</div>
+                    <div class="flex-item" style="  background-color: cornflowerblue;
+                    width: 100px;
+                    height: 100px;
+                    margin: 10px;">flex item 3</div>  
+                  </div>
+
+                  <h2>Margin-right:auto</h2>
+                  <div class="flex-container" style="  display: -webkit-flex;
+                  display: flex;
+                  width: 400px;
+                  height: 250px;
+                  background-color: lightgrey; ">
+                    <div class="flex-item2" style="  background-color: cornflowerblue;
+                    width: 75px;
+                    height: 75px;
+                    margin: 10px;  margin-right: auto;">flex item 1</div>
+                    <div class="flex-item2" style="  background-color: cornflowerblue;
+                    width: 75px;
+                    height: 75px;
+                    margin: 10px;">flex item 2</div>
+                    <div class="flex-item2" style="  background-color: cornflowerblue;
+                    width: 75px;
+                    height: 75px;
+                    margin: 10px;">flex item 3</div>  
+                  </div>
+
+                  <h2>Align-self on flex items</h2>
+                  <div class="flex-container3">
+                    <div class="flex-item4 item5">flex-start</div>
+                    <div class="flex-item4 item6">flex-end</div>
+                    <div class="flex-item4 item7">center</div>
+                    <div class="flex-item4 item8">baseline</div>
+                    <div class="flex-item4 item9">stretch</div>
+                  </div>
+                  
+                  <h2>Lenght of the flex item relative to the rest flex itmes</h2>
+                  <div class="flex-container10">
+                    <div class="flex-item11 item12">flex item 1</div>
+                    <div class="flex-item11 item13">flex item 2</div>
+                    <div class="flex-item11 item14">flex item 3</div>  
+                  </div>
+
+      <h2>Responsive gallery with flexbox</h2>
+      <button type="button"><a href="../css/css-flexbox2.html">Haz click</a></button>
+
+      <h2>Responsive website with flexbox</h2>
+      <button type="button"><a href="../css/css-flexbox3.html">Haz click</a></button>
+</body>
+</html>

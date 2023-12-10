@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .center4 {
+          line-height: 200px;
+          height: 200px;
+          border: 3px solid green;
+          text-align: center;
+        }
+        
+        .center4 .center5 {
+          line-height: 1.5;
+          display: inline-block;
+          vertical-align: middle;
+        }
+        /**/
+        .center7 { 
+  height: 200px;
+  position: relative;
+  border: 3px solid green; 
+}
+
+.center7 .center8 {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+        </style>
+</head>
+<body>
+  <button type="button"><a href="../css/css-alignitem.html">Regresar</a></button> 
+    <h2>Center vertically with padding</h2>
+    <div class="center" style="padding: 70px 0;
+    border: 3px solid green;">
+        <p>I am vertically centered.</p>
+      </div>
+
+      <h2>Center vertically and horizontally with  padding</h2>
+      <div class="center" style="padding: 70px 0;
+      border: 3px solid green;
+      text-align: center;">
+        <p>I am vertically and horizontally centered.</p>
+      </div>
+
+      <h2>Center line-height</h2>
+      <div class="center4">
+        <p class="center5">I am vertically and horizontally centered.</p>
+      </div>
+
+      <h2>Center horizontal and vertical with position</h2>
+      <div class="center7">
+        <p class="center8">I am vertically and horizontally centered.</p>
+      </div>
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul.b {list-style-type: disc;}
+ul.c {list-style-type: square;}
+
+ol.d {list-style-type: armenian;}
+ol.p {list-style-type: lower-latin;}
+ol.t {list-style-type: upper-roman;}
+ol.m {list-style-type: katakana-iroha;}
+.imglist{
+list-style-image: url("../medios/punto.gif");
+
+}
+
+ol.esti1 {
+    background:#ff9999;
+        padding: 20px;
+}
+
+ul.esti2 {
+  background: #3399ff;
+  padding: 20px;
+}
+
+ .esti1 li  {
+  background: #ffe5e5;
+  color: darkred;
+  padding: 5px;
+  margin-left: 35px;
+}
+
+.esti2 li {
+  background: #cce5ff;
+  color: darkblue;
+  margin: 5px;
+}
+/**/
+ul.lfin {
+  list-style-type: none;
+  padding: 0;
+  border: 1px solid #ddd;
+}
+
+.lfin li{
+  padding: 8px 16px;
+  border-bottom: 1px solid #ddd;
+}
+
+.lfin li:last-child {
+  border-bottom: none
+}
+    </style>
+</head>
+<body>
+  <button type="button"><a href="../indic.html">Regresar</a></button> 
+    <h1>° CSS Lists</h1>
+    <h2>List styles</h2>
+    <ul class="b">
+        <li>Disc type</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+      </ul>
+      
+      <ul class="c">
+        <li>Square type</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+      </ul>
+      
+      <ol class="d">
+        <li>Armenian type</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+      </ol>
+      <ol class="p">
+        <li>Lower-latin type</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+      </ol>
+      <ol class="t">
+        <li>Upper-roman type</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+      </ol>
+      <ol class="m">
+        <li>Katakana-iroha type</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+      </ol>
+
+      <h2>Set an image as a list-marker</h2>
+      <ul class="imglist">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+      </ul>
+
+      <h2>Position the list-item marker</h2>
+      <ul style="list-style-position: outside;">
+        <li>Coffee - A brewed drink prepared from roasted coffee beans, which are the seeds of berries from the Coffea plant</li>
+        <li>Tea - An aromatic beverage commonly prepared by pouring hot or boiling water over cured leaves of the Camellia sinensis, an evergreen shrub (bush) native to Asia</li>
+        <li>Coca Cola - A carbonated soft drink produced by The Coca-Cola Company. The drink's name refers to two of its original ingredients, which were kola nuts (a source of caffeine) and coca leaves</li>
+      </ul>
+      
+      <h2>list-style-position: inside:</h2>
+      <ul style="list-style-position: inside;">
+        <li>Coffee - A brewed drink prepared from roasted coffee beans, which are the seeds of berries from the Coffea plant</li>
+        <li>Tea - An aromatic beverage commonly prepared by pouring hot or boiling water over cured leaves of the Camellia sinensis, an evergreen shrub (bush) native to Asia</li>
+        <li>Coca Cola - A carbonated soft drink produced by The Coca-Cola Company. The drink's name refers to two of its original ingredients, which were kola nuts (a source of caffeine) and coca leaves</li>
+      </ul>
+
+      <h2>Remove default list settings</h2>
+      <p>Default list:</p>
+        <ul>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+        </ul>
+
+        <p>Remove bullets, margin and padding from list:</p>
+        <ul class="demo" style="list-style-type: none; margin: 0; padding: 0;">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+        </ul>
+
+        <h2>All list properties in one declaration</h2>
+        <ul style="list-style: square inside url(../medios/punto.gif);">
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Coca Cola</li>
+          </ul>
+
+        <h2>List styling</h2>
+        <ol class="esti1" >
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Coca Cola</li>
+          </ol>
+          
+          <ul class="esti2">
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Coca Cola</li>
+          </ul>
+
+        <h2>Full-width bordered list</h2>
+          <ul class="lfin">
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Coca Cola</li>
+          </ul>
+</body>
+</html>

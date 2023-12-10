@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+body {
+  background-color:white;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #38444d;
+}
+
+li {
+  float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+        /**/
+        .dropdown1 {
+          position: relative;
+          display: inline-block;
+        }
+        
+        .dropdown-content1 {
+          display: none;
+          position: absolute;
+          background-color: #f9f9f9;
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          padding: 12px 16px;
+          z-index: 1;
+        }
+        
+        .dropdown1:hover .dropdown-content1 {
+          display: block;
+        }
+
+        /**/
+        .dropbtn2 {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown2 {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content2 {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content2 .menu1 {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content2 .menu1:hover {background-color: #f1f1f1}
+
+.dropdown2:hover .dropdown-content2 {
+  display: block;
+}
+
+.dropdown2:hover .dropbtn2 {
+  background-color: #3e8e41;
+}
+/**/
+.dropbtn3 {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown3 {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content3 {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content3 .menu3 {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content3 .menu3:hover {background-color: #f1f1f1;}
+
+.dropdown3:hover .dropdown-content3 {
+  display: block;
+}
+
+.dropdown3:hover .dropbtn3 {
+  background-color: #3e8e41;
+}
+/**/
+.dropdown4 {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content4 {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown4:hover .dropdown-content4 {
+  display: block;
+}
+
+.desc4 {
+  padding: 15px;
+  text-align: center;
+}
+        </style>
+</head>
+<body>
+  <button type="button"><a href="../indic.html">Regresar</a></button> 
+    <h1>° CSS Dropdowns</h1>
+
+    <h2>Dropdowns</h2>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">Dropdown</a>
+          <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </li>
+      </ul>
+      
+      <p>Hover over the "Dropdown" link to see the dropdown menu.</p>
+
+    <h2>Dropdown text</h2>
+    <p>Move the mouse over the text below to open the dropdown content.</p>
+
+    <div class="dropdown1">
+    <span>Mouse over me</span>
+    <div class="dropdown-content1">
+    <p>Hello World!</p>
+    </div>
+    </div>
+
+    <h2>Dropdown menu </h2>
+    <p>Move the mouse over the button to open the dropdown menu.</p>
+<div class="dropdown2">
+  <button class="dropbtn2">Dropdown</button>
+  <div class="dropdown-content2">
+  <a class="menu1" href="#">Link 1</a>
+  <a class="menu1" href="#">Link 2</a>
+  <a class="menu1" href="#">Link 3</a>
+  </div>
+</div>
+    <p><strong>Note:</strong> We use href="#" for test links. In a real web site this would be URLs.</p>
+
+    <h2>Right-aligned dropdown menu</h2>
+        <p>Determine whether the dropdown content should go from left to right or right to left with the left and right properties.</p>
+
+        <div class="dropdown3" style="float:left;">
+        <button class="dropbtn3">Left</button>
+        <div class="dropdown-content3" style="left:0;">
+        <a class="menu3" href="#">Link 1</a>
+        <a class="menu3" href="#">Link 2</a>
+        <a class="menu3" href="#">Link 3</a>
+        </div>
+        </div>
+
+        <div class="dropdown3" style="float:right;">
+        <button class="dropbtn3">Right</button>
+        <div class="dropdown-content3">
+        <a class="menu3" href="#">Link 1</a>
+        <a class="menu3" href="#">Link 2</a>
+        <a class="menu3" href="#">Link 3</a>
+        </div>
+        </div>
+
+        <h2>Dropdown image</h2>
+        <div class="dropdown4">
+            <img src="../medios/paisaje.jpg" alt="Cinque Terre" width="100" height="50">
+            <div class="dropdown-content4">
+            <img src="../medios/paisaje.jpg" alt="Cinque Terre" width="300" height="200">
+            <div class="desc4">Beautiful Cinque Terre</div>
+            </div>
+          </div>
+
+
+</body>
+</html>

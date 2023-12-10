@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+input, textarea {
+  width: 100%;
+}
+    </style>
+</head>
+<body>
+    <button type="button"><a href="../indic.html" style="float: left;">Regresar</a></button>
+    <h1>° CSS Box-sizing</h1>
+
+    <h2>Width of element without box-sizing</h2>
+    <div class="div1" style=" width: 300px;
+    height: 100px;
+    border: 1px solid blue;">This div is smaller (width is 300px and height is 100px).</div>
+    <br>
+    <div class="div2" style="  width: 300px;
+    height: 100px;  
+    padding: 50px;
+    border: 1px solid red;">This div is bigger (width is also 300px and height is 100px).</div>
+
+    <h2>Width of element with box-sizing</h2>
+    <div class="div1" style=" width: 300px;
+    height: 100px;
+    border: 1px solid blue;
+    box-sizing: border-box;">Both divs are the same size now!</div>
+    <br>
+    <div class="div2" style="  width: 300px;
+    height: 100px;  
+    padding: 50px;
+    border: 1px solid red;
+    box-sizing: border-box;">Hooray!</div>
+
+    <h2>Form elements + box-sizing</h2>
+    <div style="margin: 0;">
+        <div style="box-sizing: border-box;">
+            <form action="https://www.google.com">
+                First name:<br>
+                <input type="text" name="firstname" value="Mickey"><br>
+                Last name:<br>
+                <input type="text" name="lastname" value="Mouse"><br>
+                Comments:<br>
+                <textarea name="message" rows="5" cols="30">
+                </textarea>
+                <br><br>
+                <input type="submit" value="Enviar" >
+              </form> 
+        </div>
+        
+    </div>
+    
+      
+      <p><strong>Tip:</strong> Try to remove the box-sizing property from the style element and look what happens.
+      Notice that the width of input, textarea, and submit button will go outside of the screen.</p>
+</body>
+</html>

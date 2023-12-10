@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: lightblue;
+            background-repeat: repeat-x;
+        }
+.cambioh3 {
+  background-color: green;
+}
+
+.cambiodiv {
+  background-color: lightblue;
+}
+
+.cambiop {
+  background-color: yellow;
+}
+        </style>
+</head>
+<body id="cambiofondo">
+  <button type="button"><a href="../indic.html">Regresar</a></button> 
+    <h1>° CSS Backgrounds</h1>
+
+    <h2>Set the background color of a page</h2>
+    <p>Color de fondo establecido es lightblue</p>
+
+    <h2>Set the background color of different elements</h2>
+
+    <h3 class="cambioh3">CSS background-color example!</h3>
+    <div class="cambiodiv">
+    This is a text inside a div element.
+    <p class="cambiop">This paragraph has its own background color.</p>
+    We are still in the div element.
+    </div>
+
+    <h2>Set an image as the background of a page</h2>
+    <p>Puedes estilizar como repetir la imagen ya se horizontalmente o veticalment con la etiqueta background-repeat: repeat-x o repeat-y</p>
+    <button type="button" onclick="miFuncion()">Haz click para cambiar fondo</button>
+
+    <script>
+        function miFuncion() {
+            document.getElementById('cambiofondo').style.backgroundImage = "url('C:/Users/Usuario/Downloads/Universidad/medios/fondo-imagen.jpeg')";
+        }
+    </script>
+
+<h2>A fixed background image (this image will not scroll with the rest of the page)</h2>
+<button type="button"><a href="../css/css-background2.html">Haz click</a></button> 
+
+
+<h2>The background Property</h2>
+<button type="button"><a href="../css/css-background3.html">Haz click</a></button> 
+
+<h2>How to repeat a background image only vertically</h2>
+<button type="button"><a href="../css/css-background4.html">Haz click</a></button>
+
+
+<h2>Advanced background example</h2>
+<button type="button"><a href="../css/css-background5.html">Haz click</a></button> 
+
+</body>
+</html>

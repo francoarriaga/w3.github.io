@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div1 {
+  float: left;
+  width: 100px;
+  height: 50px;
+  margin: 10px;
+  border: 3px solid #73AD21;
+}
+
+.div2 {
+  border: 1px solid red;
+}
+
+
+.div3 {
+  float: left;
+  width: 100px;
+  height: 50px;
+  margin: 10px;
+  border: 3px solid #73AD21;
+}
+
+.div4 {
+  border: 1px solid red;
+  clear: left;
+}
+/**/
+div.hack1 {
+  border: 3px solid #4CAF50;
+  padding: 5px;
+}
+
+.img1 {
+  float: right;
+}
+
+.img2 {
+  float: right;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+/**/
+.cajaclear{
+    box-sizing: border-box;
+}
+.box1 {
+  float: left;
+  width: 31%;
+  padding: 10px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+/**/
+.imgclear{
+  box-sizing: border-box;
+}
+
+.img-container2 {
+  float: left;
+  width: 31%;
+  padding: 5px;
+}
+
+.clearfix2::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+/**/
+.flex-container1 {
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: DodgerBlue;
+}
+
+.flex-container1 .box3 {
+  background-color: #f1f1f1;
+  width: 50%;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+    </style>
+</head>
+<body>
+  <button type="button"><a href="../indic.html">Regresar</a></button> 
+    <h1>° Floating</h1>
+
+    <h2>A simple use of float property</h2>
+    <p>In the paragraph below, we have added an image with style <b>float:right</b>. The result is that the image will float to the right in the paragraph.</p>
+    <p><img src="../medios/hacker.gif" width="100" height="140" style="float: right;">
+    This is some text. This is some text. This is some text.
+    This is some text. This is some text. This is some text.
+    This is some text. This is some text. This is some text.
+    This is some text. This is some text. This is some text.
+    This is some text. This is some text. This is some text.
+    This is some text. This is some text. This is some text.
+    This is some text. This is some text. This is some text.
+    This is some text. This is some text. This is some text.
+    This is some text. This is some text. This is some text.
+    This is some text. This is some text. This is some text.
+    This is some text. This is some text. This is some text.
+    This is some text. This is some text. This is some text.
+    This is some text. This is some text. This is some text.
+    </p>
+<br>
+<br>
+    <h2>Float with border and margin</h2>
+    <p><img src="../medios/hacker.gif" width="100" height="140" style="float: right; border: 1px dotted black; margin: 0px 0px 15px 20px;">
+        This is some text. This is some text. This is some text.
+        This is some text. This is some text. This is some text.
+        This is some text. This is some text. This is some text.
+        This is some text. This is some text. This is some text.
+        This is some text. This is some text. This is some text.
+        This is some text. This is some text. This is some text.
+        This is some text. This is some text. This is some text.
+        This is some text. This is some text. This is some text.
+        This is some text. This is some text. This is some text.
+        This is some text. This is some text. This is some text.
+        This is some text. This is some text. This is some text.
+        This is some text. This is some text. This is some text.
+        This is some text. This is some text. This is some text.
+        </p>
+        <br><br>
+        <h2>Use float with subtitle</h2>
+        <div style="float: right;
+        width: 120px;
+        margin: 0 0 15px 20px;
+        padding: 15px;
+        border: 1px solid black;
+        text-align: center;">
+            <img src="../medios/hacker.gif" width="100" height="140" ><br>Hola mudno
+            </div>
+            
+            <p>
+            This is some text. This is some text. This is some text.
+            This is some text. This is some text. This is some text.
+            This is some text. This is some text. This is some text.
+            This is some text. This is some text. This is some text.
+            This is some text. This is some text. This is some text.
+            This is some text. This is some text. This is some text.
+            This is some text. This is some text. This is some text.
+            This is some text. This is some text. This is some text.
+            This is some text. This is some text. This is some text.
+            This is some text. This is some text. This is some text.
+            This is some text. This is some text. This is some text.
+            This is some text. This is some text. This is some text.
+            This is some text. This is some text. This is some text.
+            </p>
+
+            <h2>First letter to the left</h2>
+            <p>
+                <span style=" float: left;
+                width: 0.7em;
+                font-size: 400%;
+                font-family: algerian, courier;
+                line-height: 80%;">H</span>ere, the first letter of this text is embedded in a span element. The span element has a width that is 0.7 times the size of the current font. The font-size of the span element is 400% (quite large) and the line-height is 80%. The font of the letter in the span will be in "Algerian".
+                </p>
+
+        <h2>Desactivate float with property</h2>
+            <h3>Without clear</h3>
+            <div class="div1">div1</div>
+            <div class="div2">div2 - Notice that the div2 element is after div1, in the HTML code. However, since div1 is floated to the left, this happens: the text in div2 is floated around div1, and div2 surrounds the whole thing.</div>
+
+        <h2>Using clear</h2>
+            <div class="div3">div3</div>
+            <div class="div4">div4 - Using clear moves div4 down below the floated div3. The value "left" clears elements floated to the left. You can also clear "right" and "both".</div>
+
+        <h2>Desactivate float with hack clerafix</h2>
+        <p>This image is floated to the right. It is also taller than the element containing it, so it overflows outside of its container:</p>
+
+        <div class="hack1">
+        <img class="img1" src="../medios/hacker.gif" alt="Pineapple" width="170" height="170">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet...
+        </div>
+
+        <h2 style="clear:right">With New Modern Clearfix</h2>
+        <p>Add the clearfix hack to the containing element, to fix this problem:</p>
+
+        <div class="clearfix">
+        <img class="img2" src="../medios/hacker.gif" alt="Pineapple" width="170" height="170">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet...
+        </div>
+        <br><br>
+
+        <h2>Create floating boxes</h2>
+        <div class="cajaclear">
+            <div class="clearfix">
+                <div class="box1" style="background-color:#bbb">
+                <p>Some text inside the box.</p>
+                </div>
+                <div class="box1" style="background-color:#ccc">
+                <p>Some text inside the box.</p>
+                </div>
+                <div class="box1" style="background-color:#ddd">
+                <p>Some text inside the box.</p>
+                </div>
+              </div>
+        </div>
+        
+        <h2>Create side-by-side images</h2>
+        <div class="imgclear"></div>
+        <div class="clearfix2">
+            <div class="img-container2">
+            <img src="../medios/paisajebosque.jpg" alt="Italy" style="width:100%">
+            </div>
+            <div class="img-container2">
+            <img src="../medios/paisajelago.jpg" alt="Forest" style="width:100%">
+            </div>
+            <div class="img-container2">
+            <img src="../medios/paisajeterra.jpg" alt="Mountains" style="width:100%">
+            </div>
+          </div>
+
+          <h2>Flexbox boxes</h2>
+          <div class="flex-container1">
+            <div class="box3">Box 1 - This is some text to make sure that the content gets really tall. This is some text to make sure that the content gets really tall.</div>
+            <div class="box3">Box 2 - My height will follow Box 1.</div>
+          </div>
+          
+
+          <h2>Horizontal menu</h2>
+          <button type="button"> <a href="../css/css-floating2.html">Haz click</a></button>
+
+          
+          <h2>Creating a web layout Examples</h2>
+          <button type="button"> <a href="../css/css-floating3.html">Haz click</a></button>
+      </body>    
+</html>

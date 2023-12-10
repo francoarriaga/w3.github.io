@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div.altoancho {
+  height: 100px;
+  width: 500px;
+  background-color: powderblue;
+}
+div.anchuramax {
+  max-width: 500px;
+  height: 100px;
+  background-color: powderblue;
+}
+img.aaone {
+  height: auto;
+}
+
+img.aatwo {
+  height: 200px;
+  width: 200px;
+}
+
+div.aathree {
+  height: 300px;
+  width: 300px;
+  background-color: powderblue;
+}
+img.porcentajeone {
+  height: auto;
+  width: auto;
+}
+
+img.porcentajetwo {
+  height: 50%;
+  width: 50%;
+}
+div.minmax1 {
+  max-width: 400px;
+  min-width: 100px;
+  background-color: powderblue;
+}
+div.minmax2 {
+  max-height: 600px;
+  min-height: 400px;
+  background-color: powderblue;
+}
+    </style>
+</head>
+<body>
+  <button type="button"><a href="../indic.html">Regresar</a></button> 
+    <h1>° CSS Height/Width</h1>
+
+    <h2>Set the height and width of an element</h2>
+    <div class="altoancho">This div element has a height of 100px and a width of 500px.</div>
+
+    <h2>Set max-width of an element</h2>
+    <div class="anchuramax">This div element has a height of 100px and a max-width of 500px.</div>
+    <p>Máximiza y minimiza el navegador.</p>
+
+    <h2>Set the height and width of different elements</h2>
+    <p>Original image:</p>
+    <img class="aaone" src="../medios/flor1.jpg" width="300" height="300"><br>
+
+    <p>Sized image (200x200 pixels):</p>
+    <img class="aatwo" src="../medios/grito.jpg" width="300" height="300"><br>
+
+    <p>The height and width of this div element is 300px:</p>
+    <div class="aathree"></div>
+
+    <h2>Set the height and width of an image using percent</h2>
+    <p>Original image:</p>
+    <img class="porcentajeone" src="../medios/paisajebosque.jpg"  width="300" height="300"><br>
+
+    <p>Sized image (in %):</p>
+    <img class="porcentajetwo" src="../medios/pajaro.jpg"  width="300" height="300">
+
+    <h2>Set min-width and max-width of an element</h2>
+    <div class="minmax1">This is some text. This is some text. This is some text.
+        This is some text. This is some text. This is some text.
+        This is some text. This is some text. This is some text.
+    </div>
+
+    <h2>Set min-height and max-height of an element</h2>
+    <div class="minmax2">This is some text. This is some text. This is some text.
+        This is some text. This is some text. This is some text.
+        This is some text. This is some text. This is some text.
+    </div>
+</body>
+</html>

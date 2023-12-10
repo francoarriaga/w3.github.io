@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #grad4 {
+  height: 55px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+}
+    </style>
+</head>
+<body>
+    <button type="button"><a href="../indic.html">regresar</a></button>
+    <h1>Gradients</h1>
+
+    <h2>° CSS Linear gradient</h2>
+    <div id="grad1" style=" height: 100px;
+    background-color: red; /* For browsers that do not support gradients */
+    background-image: linear-gradient(red, yellow);"></div>
+
+<h2>Linear gradient: left to right</h2>
+    <div id="grad1" style="  height: 200px;
+    background-color: red; /* For browsers that do not support gradients */
+    background-image: linear-gradient(to right, red , yellow);"></div>
+
+    <h2>Linear gradient: Diagonal</h2>
+    <div id="grad1" style=" height: 200px;
+    background-color: red; /* For browsers that do not support gradients */
+    background-image: linear-gradient(to bottom right, red, yellow);"></div>
+
+    <h2>Linear gradient: with a specified angle</h2>
+    <div id="grad3" style="text-align:center;  height: 100px;
+    background-color: red; /* For browsers that do not support gradients */
+    background-image: linear-gradient(180deg, red, yellow);">180deg</div><br>
+    <div id="grad4" style="text-align:center; height: 100px;
+    background-color: red; /* For browsers that do not support gradients */
+    background-image: linear-gradient(-90deg, red, yellow);">-90deg</div>
+
+    <h2>Linear gradient: multiple colors stops</h2>
+    <h3>7 Color Stops (evenly spaced):</h3>
+    <div id="grad2" style="  height: 200px;
+    background-color: red; /* For browsers that do not support gradients */
+    background-image: linear-gradient(red, orange, yellow, green, blue, indigo, violet);"></div>
+
+    <h3>3 Color Stops (not evenly spaced):</h3>
+    <div id="grad3" style="height: 200px;
+    background-color: red; /* For browsers that do not support gradients */
+    background-image: linear-gradient(red 10%, green 85%, blue 90%);"></div>
+
+    <h2>Linear gradient: rainbow + text</h2>
+    <div id="grad4" style="text-align:center;margin:auto;color:#888888;font-size:40px;font-weight:bold">
+        Rainbow Background
+        </div>
+
+    <h2>Linear gradient:  -Transparencia-</h2>
+    <div id="grad1" style=" height: 200px;
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));"></div>
+
+    <h2>Linear gradient: repeting linear gradient</h2>
+    <p>A repeating linear gradient with solid stripes:</p>
+    <div id="grad5" style="height: 200px;
+    background-color: red; /* For browsers that do not support gradients */
+    background-image: repeating-linear-gradient(190deg,red,yellow 7%,green 10%);"></div>
+    <p>A repeating gradient on 190deg axe starting red and finishing green:</p>
+    <div id="grad6" style=" height: 200px;
+    background-color: red; /* For browsers that do not support gradients */
+    background-image: repeating-linear-gradient(45deg, red 0px, red 10px, red 10px, yellow 10px, yellow 20px);"></div>
+
+    <h2>Radial gradient: uniform</h2>
+    <div id="grad1" style="height: 150px;
+    width: 200px;
+    background-color: red; /* For browsers that do not support gradients */
+    background-image: radial-gradient(red, yellow, green);"></div>
+
+    <h2>Radial gradient:spaces</h2>
+    <div id="grad1" style="  height: 150px;
+    width: 200px;
+    background-color: red; /* For browsers that do not support gradients */
+    background-image: radial-gradient(red 5%, yellow 15%, green 60%);"></div>
+
+        <h2>Radial gradient: shapes</h2>
+        <h3>Ellipse (this is default):</h3>
+        <div id="grad1" style="  height: 150px;
+        width: 200px;
+        background-color: red; /* For browsers that do not support gradients */
+        background-image: radial-gradient(red, yellow, green);"></div>
+
+        <h3><strong>Circle:</strong></h3>
+        <div id="grad2" style="height: 150px;
+        width: 200px;
+        background-color: red; /* For browsers that do not support gradients */
+        background-image: radial-gradient(circle, red, yellow, green);"></div>
+
+    <h2>Radial gradient:size keyword</h2>
+        <h3>farthest-side:</h3>
+        <div id="grad2" style="  height: 150px;
+        width: 150px;
+        background-color: red; /* For browsers that do not support gradients */
+        background-image: radial-gradient(farthest-side at 60% 55%, red, yellow, black);"></div>
+        <h3>farthest-corner (default):</h3>
+        <div id="grad4" style="height: 150px;
+        width: 150px;
+        background-color: red; /* For browsers that do not support gradients */
+        background-image: radial-gradient(farthest-corner at 60% 55%, red, yellow, black);"></div>
+
+        <h2>Radial gradient: a repeting radial gradient</h2>
+        <div id="grad1" style="height: 150px;
+        width: 200px;
+        background-color: red; /* For browsers that do not support gradients */
+        background-image: repeating-radial-gradient(red, yellow 10%, green 15%);"></div>
+
+
+</body>
+</html>

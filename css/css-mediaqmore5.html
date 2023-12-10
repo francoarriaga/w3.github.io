@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+          background-color: lightgreen;
+        }
+        
+        @media only screen and (orientation: landscape) {
+          body {
+            background-color: lightblue;
+          }
+        }
+        /**/
+        @media screen and (max-width: 900px) and (min-width: 600px) {
+  div.example {
+    font-size: 50px;
+    padding: 50px;
+    border: 8px solid black;
+    background: yellow;
+  }
+}
+        </style>
+</head>
+<body>
+  <button type="button"> <a href="../css/css-mediaqmore.html">Regresar</a></button>
+</body>
+    <h2>Change layout of a page depending on the orientation</h2>
+    <p>Resize the browser window. When the width of this document is larger than the height, the background color is "lightblue", otherwise it is "lightgreen".</p>
+
+    <h2>Min width a Max width</h2>
+        <div class="example">Example DIV.</div>
+        <p>When the browser's width is between 600 and 900px, change the appearance of DIV. 
+        <strong>Resize the browser window to see the effect</strong>.</p>
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    p.fuente1 {
+  color: blue;
+}
+
+h3 {
+  color: green;
+}
+.tamano1{
+  font-size: 250%;
+}
+
+.tamano2{
+  font-size: 200%;
+}
+
+.tamano3{
+  font-size: 100%;
+}
+.tamapx1 {
+  font-size: 40px;
+}
+
+.tamapx2 {
+  font-size: 30px;
+}
+
+.tamapx3 {
+  font-size: 14px;
+}
+.tamaem1 {
+  font-size: 2.5em; /* 40px/16=2.5em */
+}
+
+.tamaem2 {
+  font-size: 1.875em; /* 30px/16=1.875em */
+ }
+
+ .tamaem3 {
+  font-size: 0.875em; /* 14px/16=0.875em */
+}
+p.italic {
+  font-style: italic;
+}
+
+p.oblique {
+  font-style: oblique;
+}
+p.varinormal {
+  font-variant: normal;
+}
+
+p.varismall {
+  font-variant: small-caps;
+}
+p.light {
+  font-weight: lighter;
+}
+
+p.thick {
+  font-weight: bold;
+}
+
+p.thicker {
+  font-weight: 900;
+}
+p.a {
+  font: 20px Arial, sans-serif;
+}
+
+p.b {
+  font: italic small-caps bold 12px/30px Georgia, serif;
+}
+    </style>
+</head>
+<body>
+  <button type="button"><a href="../indic.html">Regresar</a></button> 
+    <h1>° CSS Fonts</h1>
+
+    <h2>Set the font of a text</h2>
+    <h3>This is heading 1</h3>
+    <p class="fuente1">This is an ordinary paragraph. Notice that this text is blue. The default text color for a page is defined in the body selector.</p>
+    <p class="fuente1">Another paragraph.</p>
+
+    <h2>Set the size of the font</h2>
+    <h3 class="tamano1">This is heading 1</h3>
+    <h4 class="tamano2">This is heading 2</h4>
+    <p class="tamano3">This is a paragraph.</p>
+
+    <h2>Set the size of the font in px</h2>
+    <h3 class="tamapx1">This is heading 1</h3>
+    <h4 class="tamapx2">This is heading 2</h4>
+    <p class="tamapx3">This is a paragraph.</p>
+    <p class="tamapx3">This is another paragraph.</p>
+
+    <h2>Set the size of the font in em</h2>
+    <h3 class="tamaem1">This is heading 1</h3>
+    <h4 class="tamaem2">This is heading 2</h4>
+    <p class="tamaem3">This is a paragraph.</p>
+    <p class="tamaem3">Specifying the font-size in em allows all major browsers to resize the text.
+    Unfortunately, there is still a problem with older versions of IE. When resizing the text, it becomes larger/smaller than it should.
+    </p>
+
+    <h2>Set the style of the font</h2>
+    <p class="italic">This is a paragraph in italic style.</p>
+    <p class="oblique">This is a paragraph in oblique style.</p>
+
+    <h2>Set the variant of the font</h2>
+    <p class="varinormal">My name is Hege Refsnes.</p>
+    <p class="varismall">My name is Hege Refsnes.</p>
+
+    <h2>Set the boldness of the font</h2>
+    <p class="light">This is a paragraph.</p>
+    <p class="thick">This is a paragraph.</p>
+    <p class="thicker">This is a paragraph.</p>
+
+    <h2>All the font properties in one declaration</h2>
+    <p class="a">This is a paragraph. The font size is set to 20 pixels, and the font family is Arial.</p>
+    <p class="b">This is a paragraph. The font is set to italic, small-caps and bold, the font size is set to 12 pixels, the line height is set to 30 pixels, and the font family is Georgia.</p>
+
+</body>
+</html>

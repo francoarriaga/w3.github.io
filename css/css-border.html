@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+p.dotted {border-style: dotted;}
+p.dashed {border-style: dashed;}
+p.solid {border-style: solid;}
+p.double {border-style: double;}
+p.groove {border-style: groove;}
+
+p.three {
+  border-style: solid;
+  border-top-width: 15px;
+}
+p.topdashed {
+    
+    border-style: solid;
+    border-top-style: dashed;
+}
+p.topinset{
+    border-style: solid;
+    border-top-style: inset;
+}
+
+p.four {
+  border-style: solid;
+  border-bottom-width: 15px;
+}
+p.bottomdashed {
+    
+    border-style: solid;
+    border-bottom-style: dashed;
+}
+p.bottominset{
+    border-style: solid;
+    border-bottom-style: inset;
+}
+p.five {
+  border-style: solid;
+  border-right-width: 15px;
+}
+p.rightdouble {
+    border-style: solid;
+    border-right-style: double;}
+
+p.six {
+  border-style: solid;
+  border-left-width: 15px;
+}
+p.leftdotted {
+    border-style: solid;
+    border-left-style: dotted;
+}
+p.colorone {
+  border-style: solid;
+  border-color: #0000ff;
+}
+
+p.colortwo {
+  border-style: solid;
+  border-color: #ff0000 #0000ff;
+}
+
+p.colorthree {
+  border-style: solid;
+  border-color: #ff0000 #00ff00 #0000ff;
+}
+
+p.colorfour {
+  border-style: solid;
+  border-color: #ff0000 #00ff00 #0000ff rgb(250,0,255);
+}
+p.declaracionone {
+  border: 5px solid red;
+}
+p.bordenormal {
+  border: 2px solid red;
+  padding: 5px;
+}
+
+p.borderedondo {
+  border: 2px solid red;
+  border-radius: 8px;
+  padding: 5px;
+}
+p.estilo1{
+  border-style: dotted solid dashed double;
+}
+p.estilo2 {
+  border-style: dotted solid;
+}
+p.propiedad1 {
+  border-style: solid;
+  border-top: thick double #ff0000;
+}
+p.propiedad2{
+  border-style: solid;
+  border-left: thick double #ff0000;
+}
+</style>
+</head>
+<body>
+  <button type="button"><a href="../indic.html">Regresar</a></button> 
+    <h1>CSS Borders</h1>
+
+    <h2>Set the width of the four borders</h2>
+    <p class="dotted">A dotted border.</p>
+    <p class="dashed">A dashed border.</p>
+    <p class="solid">A solid border.</p>
+    <p class="double">A double border.</p>
+    <p class="groove">A groove border.</p>
+
+    <h2>Set the style of the top border</h2>
+    <p class="three"><b>Note:</b> The "border-top-width" property does not work if it is used alone. Use the "border-style" property to set the borders first.</p>
+    <p class="topdashed">A dashed top border.</p>
+    <p class="topinset">An inset top border.</p>
+
+
+    <h2>Set the style of the bottom border<h2>
+    <p class="four"><b>Note:</b> The "border-top-width" property does not work if it is used alone. Use the "border-style" property to set the borders first.</p>
+    <p class="bottomdashed">A dashed top border.</p>
+    <p class="bottominset">An inset top border.</p>
+
+    
+    <h2>Set the style of the right border</h2>
+    <p class="five"><b>Note:</b> The "border-top-width" property does not work if it is used alone. Use the "border-style" property to set the borders first.</p>
+    <p class="rightdouble">A double right border.</p>
+
+    <h2>Set the style of the left border</h2>
+    <p class="six"><b>Note:</b> The "border-top-width" property does not work if it is used alone. Use the "border-style" property to set the borders first.</p>
+    <p class="leftdotted">A dotted left border.</p>
+
+    <h2>Set the color of the four borders</h2>
+    <p class="colorone">One-colored border!</p>
+    <p class="colortwo">Two-colored border!</p>
+    <p class="colorthree">Three-colored border!</p>
+    <p class="colorfour">Four-colored border!</p>
+    <p><b>Note:</b> The "border-color" property does not work if it is used alone. Use the "border-style" property to set the borders first.</p>
+
+    <h2>All the border properties in one declaration</h2>
+    <p class="declaracionone">This property is a shorthand property for border-width, border-style, and border-color.</p>
+
+    <h2>Add rounded borders to an element</h2>
+    <p class="bordenormal">Normal border</p>
+    <p class="borderedondo">Rounder border</p>
+
+    <h2>All the top border properties in one declaration</h2>
+    <p class="estilo1">This is some text in a paragraph.</p>
+    <p class="estilo2">This is some text in a paragraph.</p>
+
+    <h2>All the top/left border properties in one declaration</h2>
+    <p class="propiedad1">This is some text in a paragraph.</p>
+    <p class="propiedad2">This is some text in a paragraph.</p>
+</body>
+</html>

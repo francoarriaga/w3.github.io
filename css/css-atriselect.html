@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .sele1[target] {
+  background-color: yellow;
+}
+.sele2[target="_blank"] {
+  background-color: yellow;
+}
+/**/
+[title~="flower"] {
+  border: 5px solid yellow;
+}
+/**/
+[class|="top"] {
+  background: yellow;
+}
+/**/
+[class^="topp"] {
+  background: yellow;
+}
+/**/
+[class$="test"] {
+  background: yellow;
+}
+/**/
+[class*="testm"] {
+  background: yellow;
+}
+    </style>
+</head>
+<body>
+  <button type="button"><a href="../indic.html">Regresar</a></button> 
+    <h1>° CSS Attribute Selectors</h1>
+
+    <h2>Select all < a > </h2>
+    <a class="sele1" href="https://www.w3schools.com">w3schools.com</a>
+    <a class="sele1" href="http://www.disney.com" target="_blank">disney.com</a>
+    <a class="sele1" href="http://www.wikipedia.org" target="_top">wikipedia.org</a>
+
+    <h2>Select all elements with target="_blank"</h2>
+    <p>The link with target="_blank" gets a yellow background:</p>
+    <a  class="sele2" href="https://www.w3schools.com">w3schools.com</a>
+    <a class="sele2" href="http://www.disney.com" target="_blank">disney.com</a>
+    <a class="sele2" href="http://www.wikipedia.org" target="_top">wikipedia.org</a>
+    
+    <h2>Select all elements with a title atribute "flower"</h2>
+    <img src="../medios/flor1.jpg" title="klematis flower" width="150" height="113">
+    <img src="../medios/flor2.gif" title="flower" width="224" height="162">
+    <img src="../medios/paisaje.jpg" title="tree" width="200" height="208">
+
+    <h2>Select all elements with a title atribute "top"</h2>
+    <h3 class="top-header">Welcome</h3>
+    <p class="top-text">Hello world!</p>
+    <p class="topcontent">Are you learning CSS?</p>
+
+    <h2>Select all elements that begin with title atribute "topp"</h2>
+    <h3 class="topp-header">Welcome</h3>
+    <p class="topp-text">Hello world!</p>
+    <p class="toppcontent">Are you learning CSS?</p>
+
+    <h2>Select all elements that ends with title atribute "test"</h2>
+    <div class="first_test">The first div element.</div>
+    <div class="second">The second div element.</div>
+    <div class="my-test">The third div element.</div>
+    <p class="mytest">This is some text in a paragraph.</p>
+
+    <h2>Select all elements that contains title atribute "testm"</h2>
+    <div class="first_testm">The first div element.</div>
+    <div class="second">The second div element.</div>
+    <div class="my-testm">The third div element.</div>
+    <p class="mytestm">This is some text in a paragraph.</p>
+
+    </body>
+</html>
