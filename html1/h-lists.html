@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*Modificación de listas*/
+#menu ul ,#menu li {
+  display:inline;
+  list-style-type: decimal;
+}
+ul.listamenu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+}
+
+li.listamenu {
+  float: left;
+}
+
+.listamenu li,.listamenu a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+.listamenu li a:hover {
+  background-color: #111111;
+}
+    </style>
+</head>
+<body>
+  <button type="button"><a href="../indih.html">Regresar</a> </button>
+    <h1>° HTML Lists</h1>
+    <div>
+      <h2>The lists begin here: </h2>
+      <h2>Default unordered list</h2>
+            <ul>
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+            </ul>  
+            <h2>Unordered list with stylized bullets</h2>
+            <ul style="list-style-type:square;">
+                <li>Coffee</li>
+                <li>Tea</li>
+                <li>Milk</li>
+            </ul>
+            <h2>Default ordered list</h2>
+            <ol>
+              <li>Coffee</li>
+              <li>Tea</li>
+              <li>Milk</li>
+            </ol> 
+            <h2>Ordered list with stylized bullets</h2>
+            <ol type="A">
+                <li>Coffee</li>
+                <li>Tea</li>
+                <li>Milk</li>
+              </ol>
+              <h2>A descriptive list</h2>
+              <dl>
+                <dt>Coffee</dt>
+                <dd>- black hot drink</dd>
+                <dt>Milk</dt>
+                <dd>- white cold drink</dd>
+              </dl>
+              
+              <h2>A nested list</h2>
+                <ul>
+                <li>Coffee</li>
+                <li>Tea
+                    <ul>
+                    <li>Black tea</li>
+                    <li>Green tea
+                    <ul>
+                    <li>China</li>
+                    <li>Africa</li>
+                    </ul>
+                    </li>
+                    </ul>
+                </li>
+                <li>Milk</li>
+                </ul>
+                <h2>horizontal lists</h2>
+            <ul id="menu">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>PHP</li>
+            </ul>  
+            <h2>Horizontal menu type list</h2>
+            <ul class="listamenu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .claselondres1{
+    background-color: black;
+  color: white;
+  padding: 20px;
+}
+.claselondres2{
+    background-color: tomato;
+  color: white;
+  border: 2px solid black;
+  margin: 20px;
+  padding: 20px;
+}
+.claselondres3{
+    font-size: 120%;
+  color: red;
+}
+.claselondres4{
+    background-color: tomato;
+  color: white;
+  padding: 10px;
+}
+#identificadorid1{
+    background-color: lightblue;
+  color: black;
+  padding: 40px;
+  text-align: center;
+}
+    </style>
+</head>
+<body>
+  <button type="button"><a href="../indih.html">Regresar</a> </button>
+    <h1>° Id en html</h1>
+        <div>
+            <h2>The id Attribute</h2>
+            <p>Usa css para estilizar un elemento con el id ("identificadorid"):</p>
+
+            <h1 id="identificadorid1">Mi título</h1>
+        </div>
+        <div>
+            <h2>Difference between class and id</h2>
+            <p>Un nombre de clase puede ser usado por múltiples elementos HTML, mientras que un nombre de identificación solo debe ser usado por un elemento HTML dentro de la página:</p>
+            <h4>Estilizado con clases</h4>
+            <div class="claselondres2">
+                <h2>Londres</h2>
+                <p>Londres es la capital de Inglaterra.</p>
+            </div> 
+                
+            <div class="claselondres2">
+                    <h2>Londres</h2>
+                    <p>Londres es la capital de Inglaterra.</p>
+            </div> 
+            <h4>Estilizado con id</h4>
+            <h1 id="identificadorid1">Mis ciudades</h1>
+        </div>
+        <div>
+            <h2>Access an element with a specific id, with JavaScript</h2>
+            <p>JavaScript puede acceder a un elemento con una identificación especificada utilizando el método getElementById():</p>
+
+            <h4 id="identificadorid2">Hola mundo!</h4>
+            <button onclick="displayResult()">Cambia el texto</button>
+
+            <script>
+            function displayResult() {
+            document.getElementById("identificadorid2").innerHTML = "Ten un lindo dia!";
+            }
+            </script>
+        </div>
+</body>
+</html>

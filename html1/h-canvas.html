@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <button type="button"><a href="../indih.html">Regresar</a></button>
+    <h1>° HTML Canvas Graphics</h1>
+    <div>
+        <h2>Draw on the canvas with JavaScript</h2>
+        <canvas id="myCanvas" width="200" height="100" style="border:1px solid #c3c3c3;">
+            Your browser does not support the HTML canvas tag.
+            </canvas>
+            
+            <script>
+            var c = document.getElementById("myCanvas");
+            var ctx = c.getContext("2d");
+            ctx.fillStyle = "#FF0000";
+            ctx.fillRect(0,0,150,75);
+            </script>
+    </div>
+    <div>
+        <h2>Draw a line with lineTo()</h2>
+        <canvas id="canvaslinea" width="200" height="100" style="border:1px solid #d3d3d3;">
+            Your browser does not support the HTML canvas tag.</canvas>
+            
+            <script>
+            var c = document.getElementById("canvaslinea");
+            var ctx = c.getContext("2d");
+            ctx.moveTo(0,0);
+            ctx.lineTo(200,100);
+            ctx.stroke();
+            </script>
+    </div>
+    <div>
+     <h2>Draw a circle with arc()</h2>
+      <canvas id="canvasarco" width="200" height="100" style="border:1px solid #d3d3d3;">
+        Your browser does not support the HTML canvas tag.</canvas>
+      <script>
+        var c = document.getElementById("canvasarco");
+        var ctx = c.getContext("2d");
+        ctx.beginPath();
+        ctx.arc(95,50,40,0,2*Math.PI);
+        ctx.stroke();
+        </script> 
+    </div>
+    <div>
+     <h2>Draw a text with fillText()</h2>
+      <canvas id="canvastexto" width="200" height="100" style="border:1px solid #d3d3d3;">
+        Your browser does not support the HTML canvas tag.</canvas>
+        
+        <script>
+        var c = document.getElementById("canvastexto");
+        var ctx = c.getContext("2d");
+        ctx.font = "30px Arial";
+        ctx.fillText("Hello World",10,50);
+        </script>
+    </div>
+    <div>
+      <h2>Draw a text with strokeText()</h2>
+      <canvas id="canvastextodiseno" width="200" height="100" style="border:1px solid #d3d3d3;">
+        Your browser does not support the HTML canvas tag.</canvas>
+        
+        <script>
+        var c = document.getElementById("canvastextodiseno");
+        var ctx = c.getContext("2d");
+        ctx.font = "30px Arial";
+        ctx.strokeText("Hello World",10,50);
+        </script>
+    </div>
+    <div>
+      <h2>Draw a linear gradient</h2>
+      <canvas id="canvasgradientelineal" width="200" height="100" style="border:1px solid #d3d3d3;">
+        Your browser does not support the HTML canvas tag.</canvas>
+        
+        <script>
+        var c = document.getElementById("canvasgradientelineal");
+        var ctx = c.getContext("2d");
+        // Create gradient
+        var grd = ctx.createLinearGradient(0,0,200,0);
+        grd.addColorStop(0,"red");
+        grd.addColorStop(1,"white");
+        // Fill with gradient
+        ctx.fillStyle = grd;
+        ctx.fillRect(10,10,150,80);
+        </script>
+    </div>
+    <div>
+      <h2>Draw a circular gradient</h2>
+      <canvas id="canvasgradientecircular" width="200" height="100" style="border:1px solid #d3d3d3;">
+        Your browser does not support the HTML canvas tag.</canvas>
+        
+        <script>
+        var c = document.getElementById("canvasgradientecircular");
+        var ctx = c.getContext("2d");
+        
+        // Create gradient
+        var grd = ctx.createRadialGradient(75,50,5,90,60,100);
+        grd.addColorStop(0,"red");
+        grd.addColorStop(1,"white");
+        
+        // Fill with gradient
+        ctx.fillStyle = grd;
+        ctx.fillRect(10,10,150,80);
+        </script>
+    </div>
+    <div>
+      <h2>Draw an image with drawImage()</h2>
+      <p>Imagen a usar:</p>
+      <img id="scream" src="../medios/grito.jpg" alt="The Scream" width="220" height="277">
+
+      <p>Canvas a llenar:</p>
+      <canvas id="canvasgrito" width="250" height="300"
+      style="border:1px solid #d3d3d3;">
+      Your browser does not support the HTML canvas tag.</canvas>
+
+      <p><button onclick="myCanvas()">Intentalo</button></p>
+
+      <script>
+      function myCanvas() {
+        var c = document.getElementById("canvasgrito");
+        var ctx = c.getContext("2d");
+        var img = document.getElementById("scream");
+        ctx.drawImage(img,10,10);
+      }
+      </script>
+    </div>
+
+</body>
+</html>

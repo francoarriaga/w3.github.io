@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button type="button"><a href="../indih.html">Regresar</a></button>
+    <h1>° HTML Form Elements</h1>
+
+
+    <div>
+        <h2>A simple drop-down list</h2>
+        <p>The select element displays a drop-down list:</p>
+
+        <form action="/action_page.php">
+        <label for="cars">Elige un auto:</label>
+        <select id="cars" name="cars">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="fiat">Fiat</option>
+            <option value="audi">Audi</option>
+        </select>
+        <input type="button" value="Enviar">
+        </form>
+
+        <h2>A drop-down list with a pre-selected value</h2>
+        <form action="/action_page.php">
+            <label for="cars">Elige un auto:</label>
+            <select id="cars" name="cars">
+              <option value="volvo">Volvo</option>
+              <option value="saab">Saab</option>
+              <option value="fiat" selected>Fiat</option>
+              <option value="audi">Audi</option>
+            </select>
+            <input type="button" value="Enviar">
+          </form>
+    </div>
+    <div>
+        <h2>A textarea (a multi-line text input field)</h2>
+        <p>The textarea element defines a multiline text field.</p>
+
+        <form action="/action_page.php">
+        <textarea name="message" rows="10" cols="30">El gato juega en el jardin.</textarea>
+        <br><br>
+        <input type="button" value="Enviar">
+        </form>
+    </div>
+    <div>
+       <h2>An input button</h2>
+        <p>Define a clickeable button:</p>
+        <button type="button" onclick="alert('Bienvenido')">Haz click</button>
+    </div>
+    <div>
+
+        <h2>Using the < datalist > Element</h2>
+        <p>The datalist element specifies a list of predefined options for an input element.
+        </p>
+        <form action="/action_page.php">
+            <input list="browsers" name="browser">
+            <datalist id="browsers">
+              <option value="Internet Explorer">
+              <option value="Firefox">
+              <option value="Chrome">
+              <option value="Opera">
+              <option value="Safari">
+            </datalist>
+            <input type="button" value="Enviar">
+          </form>
+    </div>
+    <div>
+        <h2>Using the < output > Element</h2>
+        <p>The output element represents the result of a calculation.</p>
+
+        <form action="/action_page.php"
+        oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+        0
+        <input type="range" id="a" name="a" value="50">
+        100 +
+        <input type="number" id="b" name="b" value="50">
+        =
+        <output name="x" for="a b"></output>
+        <br><br>
+        <input type="button" value="Enviar">
+        </form>
+    </div>
+</body>
+</html>

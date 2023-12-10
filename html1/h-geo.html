@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+  <button type="button"><a href="../indih.html">Regresar</a></button>
+  <br><br>
+
+  <h1>° HTML Geolocation</h1>
+
+
+  <h2>Get geolocation coordinates</h2>
+  <p>Click the button to get your coordinates.</p>
+
+<button onclick="getLocation()">Haz click</button>
+
+<p id="demo"></p>
+
+<script>
+var x = document.getElementById("demo");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else { 
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude + 
+  "<br>Longitude: " + position.coords.longitude;
+}
+
+</script>
+
+
+  <h2>Handle geolocation errors</h2>
+  <button type="button"> <a href="../html1/h-geo2.html">Haz click</a></button>
+
+
+  <h2>Get geolocation and watch the position</h2>
+  <button type="button"><a href="../html1/h-geo3.html">Haz click</a></button>
+
+</body>
+</html>

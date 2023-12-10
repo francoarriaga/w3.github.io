@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <button type="button"><a href="../indih.html">Regresar</a></button>
+
+    <h1>° HTML Local Storage</h1>
+
+
+    <div>
+      <h2>Store a name permanently</h2>
+      <div id="result"></div>
+      <script>
+      // Check browser support
+      if (typeof(Storage) !== "undefined") {
+        // Store
+        localStorage.setItem("lastname", "Smith");
+        // Retrieve
+        document.getElementById("result").innerHTML = localStorage.getItem("lastname");
+      } else {
+        document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage...";
+      }
+      </script>
+    </div>
+
+    <div>
+      <h2>Store a counter permanently</h2>
+      <script>
+        function clickCounter0() {
+          if (typeof(Storage) !== "undefined") {
+            if (localStorage.clickcount) {
+              localStorage.clickcount = Number(localStorage.clickcount)+1;
+            } else {
+              localStorage.clickcount = 1;
+            }
+            document.getElementById("resultado2").innerHTML = "Haz clickeado el boton " + localStorage.clickcount + " veces.";
+          } else {
+            document.getElementById("resultado2").innerHTML = "Lo siento tu buscador no soporta el contador...";
+          }
+        }
+        </script>
+
+
+      <p><button onclick="clickCounter0()" type="button">Haz click!</button></p>
+      <div id="resultado2"></div>
+      <p>Click to see the counter increase.</p>
+       <p>Close your browser, try again and the counter will continue to increase (it is not reset).</p>
+    </div>
+
+    <div>
+      <h2>Store a counter for one session</h2>
+      <script>
+        function clickCounter() {
+          if (typeof(Storage) !== "undefined") {
+            if (sessionStorage.clickcount) {
+              sessionStorage.clickcount = Number(sessionStorage.clickcount)+1;
+            } else {
+              sessionStorage.clickcount = 1;
+            }
+            document.getElementById("resultado3").innerHTML = "Haz clickeado el boton " + sessionStorage.clickcount + " veces esta sesion.";
+          } else {
+            document.getElementById("resultado3").innerHTML = "Lo siento tu buscador no soporta el contador...";
+          }
+        }
+        </script>
+        </head>
+        <body>
+        
+        <p><button onclick="clickCounter()" type="button">Click me!</button></p>
+        <div id="resultado3"></div>
+        <p>Click to see the counter increase.</p>
+         <p>Close your browser, try again and the counter is reset.</p>
+    </div>
+</body>
+</html>

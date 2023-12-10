@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         /*Modificación de tablas*/
+  .tabladiseño1 th, .tabladiseño1 td{
+    border: 1px solid black;
+    
+ }
+ .tabladiseño2 th, .tabladiseño2 td{
+    border: 1px solid black;
+    padding: 15px;
+    text-align: left;
+ }
+ .tabladiseño3 th, .tabladiseño3 td{
+    border: 1px solid black;
+    padding: 15px;
+    text-align: left;
+ }
+ .tabladiseño4 th, .tabladiseño4 td{
+    border: 1px solid black;
+    padding: 15px;
+    text-align: left;
+    background-color:  #f1f1c1;
+ }
+ /*Modificación de tabla por medio de id*/
+  #t01 td, #t01 th{
+    border: 1px solid black;
+    padding: 15px;
+    text-align: left;
+ }
+ #t01 tr:nth-child(even) {
+  background-color: #eee;
+}
+#t01 tr:nth-child(odd) {
+ background-color: #fff;
+}
+#t01 th {
+  background-color: black;
+  color: white;
+}
+ /*Modificación de tabla por medio de class*/
+ table.names td, table.names th {
+    border: 1px solid black;
+    padding: 15px;
+    text-align: left;
+ }
+ table.names tr:nth-child(even) {
+  background-color: #eee;
+}
+table.names tr:nth-child(odd) {
+  background-color:#fff;
+}
+table.names th {
+  background-color: black;
+  color: white
+}
+
+    </style>
+</head>
+<body>
+  <button type="button"><a href="../indih.html">Regresar</a> </button>
+   <h1>° HTML Tables</h1>
+        <div>
+            <h2>Basic HTML tables</h2>
+            <p>To create the table we use the table tag, for the rows we use tr and for the columns we use td; You can also add a design style to the table</p>
+                <hr>
+                <h2>1 Column:</h2>
+
+                <table >
+                <tr>
+                    <td>100</td>
+                </tr>
+                </table>
+
+                <hr>
+                <h2>1 Row y 3 Columns:</h2>
+                <table>
+                <tr>
+                    <td>100</td>
+                    <td>200</td>
+                    <td>300</td>
+                </tr>
+                </table>
+                <hr>
+
+                <h2>3 Rows y 3 Columns:</h2>
+                <table >
+                <tr >
+                    <td>100</td>
+                    <td>200</td>
+                    <td>300</td>
+                </tr>
+                <tr>
+                    <td>400</td>
+                    <td>500</td>
+                    <td>600</td>
+                </tr>
+                <tr>
+                    <td>700</td>
+                    <td>800</td>
+                    <td>900</td>
+                </tr>
+                </table>
+
+                <hr>
+        </div>
+        <div>
+          <h2>Tables with non-collapsing layout</h2>
+            <table class="tabladiseño1" style="width:100%; border: 1px solid black; border-spacing: 15px;">
+                <tr>
+                  <th>Firstname</th>
+                  <th>Lastname</th> 
+                  <th>Age</th>
+                </tr>
+                <tr>
+                  <td>Jill</td>
+                  <td>Smith</td>
+                  <td>50</td>
+                </tr>
+                <tr>
+                  <td>Eve</td>
+                  <td>Jackson</td>
+                  <td>94</td>
+                </tr>
+                <tr>
+                  <td>John</td>
+                  <td>Doe</td>
+                  <td>80</td>
+                </tr>
+              </table>
+              <h2>Tables with collapsed layout</h2>
+              <table class="tabladiseño2" style="width:100%; border: 1px solid black; border-collapse: collapse;">
+                <tr>
+                  <th>Firstname</th>
+                  <th>Lastname</th> 
+                  <th>Age</th>
+                </tr>
+                <tr>
+                  <td>Jill</td>
+                  <td>Smith</td>
+                  <td>50</td>
+                </tr>
+                <tr>
+                  <td>Eve</td>
+                  <td>Jackson</td>
+                  <td>94</td>
+                </tr>
+                <tr>
+                  <td>John</td>
+                  <td>Doe</td>
+                  <td>80</td>
+                </tr>
+              </table>
+
+              <h2>Tables with vertical titles</h2>
+              <table class="tabladiseño2" style="width:100%; border: 1px solid black; border-collapse: collapse;">
+                <caption>Empleados del mes</caption>
+                <tr>
+                  <th>Firstname</th>
+                  <td>Jill</td>
+                  <td>Eve</td>
+                  <td>John</td>
+                </tr>
+                <tr>
+                    <th>Lastname</th>
+                    <td>Jackson</td>
+                  <td>Smith</td>
+                  <td>Doe</td>
+                  
+                </tr>
+                <tr>
+                    <th>Age</th>
+                    <td>50</td>
+                    <td>80</td>
+                  <td>94</td>
+                </tr>
+              </table>
+        </div>
+        <div>
+          <h2>Tables with joined columns</h2>
+            <table class="tabladiseño3" style="width:100%; border: 1px solid black; border-collapse: collapse;">
+                <tr>
+                  <th>Name</th>
+                  <th colspan="2">Telephone</th>
+                </tr>
+                <tr>
+                  <td>Bill Gates</td>
+                  <td>55577854</td>
+                  <td>55577855</td>
+                </tr>
+              </table>
+              <h2>Tables with joined rows</h2>
+              <table class="tabladiseño3" style="width:100%; border: 1px solid black; border-collapse: collapse;">
+                <tr>
+                  <th>Name:</th>
+                  <td>Bill Gates</td>
+                </tr>
+                <tr>
+                  <th rowspan="2">Telephone:</th>
+                  <td>55577854</td>
+                </tr>
+                <tr>
+                  <td>55577855</td>
+                </tr>
+              </table>
+        </div>
+        <div>
+            <h2>A table with HTML tags inside</h2>
+                            
+                <table class="tabladiseño4" style="width:100%; border: 1px solid black; border-collapse: collapse;">
+                    <tr>
+                    <td>
+                        <p>This is a paragraph</p>
+                        <p>This is another paragraph</p>
+                    </td>
+                    <td>This cell contains a table:
+                        <table>
+                        <tr>
+                            <td>A</td>
+                            <td>B</td>
+                        </tr>
+                        <tr>
+                            <td>C</td>
+                            <td>D</td>
+                        </tr>
+                        </table>
+                    </td>
+                    </tr>
+                    <tr>
+                    <td>This cell contains a list
+                        <ul>
+                        <li>apples</li>
+                        <li>bananas</li>
+                        <li>pineapples</li>
+                        </ul>
+                    </td>
+                    <td>HELLO</td>
+                    </tr>
+                </table>
+        </div>
+        <div>
+            <h2>Tables with different style using id </h2>
+                <table id="t01" style="border: 1px solid black; border-collapse: collapse;">
+                    <tr>
+                    <th>Firstname</th>
+                    <th>Lastname</th> 
+                    <th>Age</th>
+                    </tr>
+                    <tr>
+                    <td>Jill</td>
+                    <td>Smith</td>
+                    <td>50</td>
+                    </tr>
+                    <tr>
+                    <td>Eve</td>
+                    <td>Jackson</td>
+                    <td>94</td>
+                    </tr>
+                    <tr>
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td>80</td>
+                    </tr>
+                </table>
+                <h2>Tables with different style using class</h2>
+                <table class="names" style="border: 1px solid black; border-collapse: collapse;">
+                    <tr>
+                      <th>Firstname</th>
+                      <th>Lastname</th> 
+                      <th>Age</th>
+                    </tr>
+                    <tr>
+                      <td>Jill</td>
+                      <td>Smith</td>
+                      <td>50</td>
+                    </tr>
+                    <tr>
+                      <td>Eve</td>
+                      <td>Jackson</td>
+                      <td>94</td>
+                    </tr>
+                    <tr>
+                      <td>John</td>
+                      <td>Doe</td>
+                      <td>80</td>
+                    </tr>
+                  </table>
+        </div>
+</body>
+</html>

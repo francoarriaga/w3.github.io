@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button type="button"><a href="../indih.html">Regresar</a></button>
+    <h1>° HTML Forms</h1>
+
+
+    <div>
+        <h2>Form with text input</h2>
+        <form>
+            <label for="fname">Nombre:</label><br>
+            <input type="texto" id="fname" name="fname" value="Juan"><br>
+            <label for="lname">Apellido:</label><br>
+            <input type="texto" id="lnombre" name="lnombre" value="Doe">
+         </form>   
+         <p>Please note that the form itself is not visible.</p>
+          <p>Please also note that the default width of text entry fields is 20 characters.</p>
+    </div>
+    <div>
+        <h2>Form with radio button input</h2>
+        <p>Choose favorite language:</p>
+        <form>
+        <input type="radio" id="html" name="fav_language" value="HTML">
+        <label for="html">HTML</label><br>
+        <input type="radio" id="css" name="fav_language" value="CSS">
+        <label for="css">CSS</label><br>
+        <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+        <label for="javascript">JavaScript</label>
+        </form>
+    </div>
+    <div>
+        <h2>Form with text fields and a submit button</h2>
+        <form action="/action_page.php">
+            <label for="fname">Nombre:</label><br>
+            <input type="text" id="fname" name="fname" value="Juan"><br>
+            <label for="lname">Apellido:</label><br>
+            <input type="text" id="lnombre" name="lnombre" value="Doe"><br><br>
+            <input type="submit" value="Enviar">
+         </form>
+         
+         <p>If you click the "Submit" button, the form data will be sent to a page called "/action_page.php".</p>
+    </div>
+    <div>
+        <h2>Form with a text fields without a name attribute</h2>
+        <p>If you click the "Submit" button, the form data will be sent to a page called "/action_page.php".</p>
+
+         <p>Note that the value of the "Name" field will not be sent because the input element does not have a name attribute.</p>
+        <form action="/action_page.php">
+            <label for="fname">Primer Nombre:</label><br>
+            <input type="text" id="fname" value="John"><br><br>
+            <input type="submit" value="enviar">
+          </form> 
+    </div>
+    <div>
+        <h2>Grouping Form Data</h2>
+        <p>The field set element is used to group related data on a form, and the legend element defines a title for the field set element.
+        </p>
+        <form action="/action_page.php">
+            <fieldset>
+              <legend>Personalia:</legend>
+              <label for="fname">Primer Nombre:</label><br>
+              <input type="text" id="fname" name="fname" value="John"><br>
+              <label for="lname">Apellido:</label><br>
+              <input type="text" id="lname" name="lname" value="Doe"><br><br>
+              <input type="submit" value="enviar">
+            </fieldset>
+          </form>
+    </div>
+</body>
+</html>
