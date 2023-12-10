@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div.tra1{
+  width: 100px;
+  height: 100px;
+  background: red;
+  transition: width 2s;
+}
+
+div.tra1:hover {
+  width: 300px;
+}
+/**/
+div.tra2 {
+  width: 100px;
+  height: 100px;
+  background: red;
+  transition: width 2s, height 4s;
+}
+
+div.tra2:hover {
+  width: 300px;
+  height: 300px;
+}
+/**/
+#div1 ,#div2, #div3, #div4, #div5{
+  width: 100px;
+  height: 100px;
+  background: red;
+  transition: width 2s;
+}
+
+#div1 {transition-timing-function: linear;}
+#div2 {transition-timing-function: ease;}
+#div3 {transition-timing-function: ease-in;}
+#div4 {transition-timing-function: ease-out;}
+#div5 {transition-timing-function: ease-in-out;}
+
+#div1:hover,#div2:hover, #div3:hover, #div4:hover, #div5:hover {
+  width: 300px;
+}
+/**/
+#div6 {
+  width: 100px;
+  height: 100px;
+  background: red;
+  transition: width 3s;
+  transition-delay: 1s;
+}
+
+#div6:hover {
+  width: 300px;
+}
+/**/
+#div7 {
+  width: 100px;
+  height: 100px;
+  background: red;
+  transition: width 2s, height 2s, transform 2s;
+}
+
+#div7:hover {
+  width: 300px;
+  height: 300px;
+  transform: rotate(180deg);
+}
+/**/
+#div8 {
+  width: 100px;
+  height: 100px;
+  background: red;
+  transition: width 2s linear 1s;
+}
+
+#div8:hover {
+  width: 300px;
+}
+    </style>
+</head>
+<body>
+  <button type="button"><a href="../indic.html">Regresar</a></button>
+    <h1>° CSS Transicion</h1>
+
+    <h2>Change width</h2>
+        <div class="tra1"></div>
+
+     <h2>Change width and height</h2>
+        <div class="tra2"></div>
+
+    <h2>Time property of transition</h2>
+        <div id="div1">linear</div><br>
+        <div id="div2">ease</div><br>
+        <div id="div3">ease-in</div><br>
+        <div id="div4">ease-out</div><br>
+        <div id="div5">ease-in-out</div><br>
+
+    <h2>Property  delay-transition</h2>
+        <div id="div6"></div>
+    
+    <h2>Add transformation to a  transition</h2>
+    <div id="div7"></div>
+
+    <h2>All transition properties in one shorthad property</h2>
+    <div id="div8"></div>
+</body>
+</html>

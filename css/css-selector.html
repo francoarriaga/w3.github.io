@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    .selector {
+  text-align: center;
+  color: red;
+} 
+#para1 {
+  text-align: center;
+  color: red;
+}
+.center {
+  text-align: center;
+  color: red;
+}
+p.clasedoble {
+  text-align: center;
+  color: red;
+}
+
+p.largo {
+  font-size: 300%;
+}
+h3, h4, .selector-last{
+    text-align: center;
+  color: blue;
+}
+
+.st {
+  text-align: right;
+  color: blue;
+}
+</style>
+</head>
+<body>
+  <button type="button"><a href="../indic.html">Regresar</a></button> 
+  <h1>° CSS Selectors</h1>
+
+
+    <h2>Elemento selector</h2>
+    <p class="selector">Every paragraph will be affected by the style.</p>
+    <p class="selector">Me too!</p>
+    <p class="selector">And me!</p>
+
+    <h2>The id selecto</h2>
+    <p id="para1">Hello World!</p>
+<p>This paragraph is not affected by the style.</p>
+
+<h2>The class selector (for all elements)</h2>
+    <h1 class="center">Red and center-aligned heading</h1>
+    <p class="center">Red and center-aligned paragraph.</p> 
+
+<h2>The class selector (for only < p > elements)</h2>
+    <h1 class="clasedoble">This heading will not be affected</h1>
+    <p class="clasedoble">This paragraph will be red and center-aligned.</p>
+    <p class="clasedoble largo">This paragraph will be red, center-aligned, and in a large font-size.</p> 
+
+
+    <h2>Selector universal</h2>
+<h3 class="st">Hello world!</h3>
+<p class="st">Every element on the page will be affected by the style using *.</p>
+<p class="st">Me too!</p>
+<p class="st">And me!</p>
+
+
+
+<h2>Grouping selectors</h2>
+<h3>Hello World!</h3>
+<h4>Smaller heading!</h4>
+<p class="selector-last">This is a paragraph.</p>
+</body>
+</html>

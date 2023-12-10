@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+#home {
+  width: 46px;
+  height: 44px;
+  background: url(../medios/img_navsprites1.gif) 0 0;
+}
+
+#next {
+  width: 43px;
+  height: 44px;
+  background: url(../medios/img_navsprites1.gif) -91px 0;
+}
+
+/**/
+#navlist {
+  position: relative;
+}
+
+#navlist li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: absolute;
+  top: 0;
+}
+
+#navlist li, #navlist a {
+  height: 44px;
+  display: block;
+}
+
+#home {
+  left: 0px;
+  width: 46px;
+  background: url("../medios/img_navsprites1.gif") 0 0;
+}
+
+#prev {
+  left: 63px;
+  width: 43px;
+  background: url("../medios/img_navsprites1.gif") -47px 0;
+}
+
+#next {
+  left: 129px;
+  width: 43px;
+  background: url("../medios/img_navsprites1.gif") -91px 0;
+}
+/**/
+#navlist2 {
+  position: relative;
+}
+
+#navlist2 li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: absolute;
+  top: 0;
+}
+
+#navlist2 li, #navlist2 a {
+  height: 44px;
+  display: block;
+}
+
+#home2 {
+  left: 0px;
+  width: 46px;
+  background: url("../medios/img_navsprites1.gif") 0 0;
+}
+
+#prev2 {
+  left: 63px;
+  width: 43px;
+  background: url("../medios/img_navsprites1.gif") -47px 0;
+}
+
+#next2 {
+  left: 129px;
+  width: 43px;
+  background: url("../medios/img_navsprites1.gif") -91px 0;
+}
+
+#home2 a.fin:hover {
+  background: url("../medios/img_navsprites1.gif") 0 -45px;
+}
+
+#prev2 a.fin:hover {
+  background: url("../medios/img_navsprites1.gif") -47px -45px;
+}
+
+#next2 a.fin:hover {
+  background: url("../medios/img_navsprites1.gif") -91px -45px;
+}
+    </style>
+</head>
+<body>
+  <button type="button"><a href="../index.html">Regresar</a></button> 
+    <h1>° CSS Image Sprites</h1>
+
+    <h2>A imagen sprite</h2>
+    <img id="home" src="../medios/spri1.gif" width="1" height="1">
+    <img id="next" src="../medios//spri2.gif" width="1" height="1">
+
+    <h2>Image sprite with nav bottom</h2>
+    <ul id="navlist">
+        <li id="home"><a href="https://www.google.com"></a></li>
+        <li id="prev"><a href="https://www.google.com"></a></li>
+        <li id="next"><a href="https://www.google.com"></a></li>
+      </ul>
+<br><br><br>
+      <h2>Image sprite with :hover</h2>
+      <ul id="navlist2">
+        <li id="home2"><a class="fin" href="https://google.com"></a></li>
+        <li id="prev2"><a class="fin" href="https://google.com"></a></li>
+        <li id="next2"><a class="fin" href="https://google.com"></a></li>
+      </ul>
+</body>
+</html>

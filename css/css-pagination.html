@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.pag1 {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+/**/
+.pag2 {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.pag2{
+  border-radius: 5px;
+}
+.pag2:hover:not(.active) {background-color: #ddd;}
+/**/
+.paginationfin{
+    text-align: center;
+}
+.pag3 {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+  border: 1px solid #ddd;
+  margin: 0 4px;
+  font-size: 22px;
+}
+
+.pag3{
+  color: black;
+  border: 1px solid blue;
+}
+
+.pag3:hover:not(.active) {background-color: #ddd;}
+
+.pag3:first-child {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.pag3:last-child {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+/**/
+ul.breadcrumb {
+  padding: 8px 16px;
+  list-style: none;
+  background-color: #eee;
+}
+
+ul.breadcrumb li {display: inline;}
+
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
+
+ul.breadcrumb li .pag4 {color: green;}
+    </style>
+</head>
+<body>
+  <button type="button"><a href="../indic.html" style="float: left;">Regresar</a></button> 
+    <h1>° CSS Pagination</h1>
+
+    <h2>Simple pagination</h2>
+    <div  style="display: inline-block;">
+        <a class="pag1" href="#">&laquo;</a>
+        <a class="pag1" href="#">1</a>
+        <a class="pag1" href="#">2</a>
+        <a class="pag1" href="#">3</a>
+        <a class="pag1" href="#">4</a>
+        <a class="pag1" href="#">5</a>
+        <a class="pag1" href="#">6</a>
+        <a href="#">&raquo;</a>
+      </div>
+
+      <h2>Simple pagination with :hover and rounded borders</h2>
+    <div class="pagination" style="display: inline-block;">
+        <a class="pag2" href="#">&laquo;</a>
+        <a class="pag2" href="#">1</a>
+        <a class="pag2" href="#">2</a>
+        <a class="pag2" href="#">3</a>
+        <a class="pag2" href="#">4</a>
+        <a class="pag2" href="#">5</a>
+        <a class="pag2" href="#">6</a>
+        <a href="#">&raquo;</a>
+      </div>
+
+      <h2>Pagination with rounded borders, centered and margin</h2>
+      <div class="paginationfin">
+        <div style="display: inline-block;">
+            <a class="pag3" href="#">&laquo;</a>
+            <a class="pag3" href="#">1</a>
+            <a class="pag3" href="#">2</a>
+            <a class="pag3" href="#">3</a>
+            <a class="pag3" href="#">4</a>
+            <a class="pag3" href="#">5</a>
+            <a class="pag3" href="#">6</a>
+            <a href="#" class="pag3">&raquo;</a>
+          </div>
+      </div>
+      
+      <h2>Breadcrumbs</h2>
+      <ul class="breadcrumb">
+        <li><a class="pag4" href="#">Home</a></li>
+        <li><a class="pag4" href="#">Pictures</a></li>
+        <li><a class="pag4" href="#">Summer 15</a></li>
+        <li>Italy</li>
+      </ul>
+
+</body>
+</html>

@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       table.t1 , th.t1, td.t1 {
+          border: 1px solid;
+        }
+
+        table.t2, td.t2, th.t2 {
+  border: 1px solid;
+}
+
+table.t2 {
+  width: 100%;
+  border-collapse: collapse;
+}
+table.t3 {
+  width: 100%;
+  border: 1px solid;
+}
+/**/
+table.t4, td.t4, th.t4 {
+  border: 1px solid black;
+}
+
+table.t4 {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th.t4 {
+  height: 70px;
+}
+/**/
+table.t5, td.t5, th.t5 {
+  border: 1px solid black;
+}
+
+table.t5 {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th.t5 {
+  text-align: left;
+}
+td.t5 {
+  height: 50px;
+  vertical-align: bottom;
+}
+
+table.t6, td.t6, th.t6 {  
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+table.t6 {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th.t6, td.t6 {
+  padding: 15px;
+  
+}
+/**/
+table.t7 {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th.t7, td.t7 {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+.t7 tr:hover {background-color: coral;}
+/**/
+table.t8 {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th.t8, td.t8 {
+  text-align: left;
+  padding: 8px;
+}
+
+.t8 tr:nth-child(even) {background-color: #f2f2f2;}
+th.t8{
+    background-color: #04AA6D;
+  color: white;
+}
+.cap1{
+    caption-side: bottom;
+}
+table.t9{
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th.t9, td.t9 {
+  text-align: left;
+  padding: 8px;
+}
+
+.t9 tr:nth-child(even) {background-color: #f2f2f2;}
+
+/**/
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+}
+    </style>
+</head>
+<body>
+  <button type="button"><a href="../indic.html">Regresar</a></button> 
+    <h1>° CSS Tables</h1>
+
+    <h2>Specify a black border for table, th, and td elements</h2>
+    <table class="t1">
+        <tr>
+          <th class="t1">Firstname</th>
+          <th class="t1">Lastname</th>
+        </tr>
+        <tr>
+          <td class="t1">Peter</td>
+          <td class="t1">Griffin</td>
+        </tr>
+        <tr>
+          <td class="t1">Lois</td>
+          <td class="t1">Griffin</td>
+        </tr>
+      </table>
+
+      <h2>Colapsar bordes</h2>
+      <table class="t2">
+        <tr>
+          <th class="t2">Firstname</th>
+          <th class="t2">Lastname</th>
+        </tr>
+        <tr>
+          <td class="t2">Peter</td>
+          <td class="t2">Griffin</td>
+        </tr>
+        <tr>
+          <td class="t2">Lois</td>
+          <td class="t2">Griffin</td>
+        </tr>
+      </table>
+
+     <h2>Single border around the table</h2>
+      <table class="t3">
+        <tr>
+          <th>Firstname</th>
+          <th>Lastname</th>
+        </tr>
+        <tr>
+          <td>Peter</td>
+          <td>Griffin</td>
+        </tr>
+        <tr>
+          <td>Lois</td>
+          <td>Griffin</td>
+        </tr>
+      </table>
+      
+      <h2>Specify the width and height of a table</h2>
+      <table class="t4">
+        <tr>
+          <th class="t4">Firstname</th>
+          <th class="t4">Lastname</th>
+          <th class="t4">Savings</th>
+        </tr>
+        <tr>
+          <td class="t4">Peter</td>
+          <td class="t4">Griffin</td>
+          <td class="t4">$100</td>
+        </tr>
+        <tr>
+          <td class="t4">Lois</td>
+          <td class="t4">Griffin</td>
+          <td class="t4">$150</td>
+        </tr>
+        <tr>
+          <td class="t4">Joe</td>
+          <td class="t4">Swanson</td>
+          <td class="t4">$300</td>
+        </tr>
+        <tr>
+          <td class="t4">Cleveland</td>
+          <td class="t4">Brown</td>
+          <td class="t4">$250</td>
+        </tr>
+      </table>
+
+      <h2>Set the alignment of content (text-align)</h2>
+      <table class="t5">
+        <tr>
+          <th class="t5">Firstname</th>
+          <th class="t5">Lastname</th>
+          <th class="t5">Savings</th>
+        </tr>
+        <tr>
+          <td class="t5">Peter</td>
+          <td class="t5">Griffin</td>
+          <td class="t5">$100</td>
+        </tr>
+        <tr>
+          <td class="t5">Lois</td>
+          <td class="t5">Griffin</td>
+          <td class="t5">$150</td>
+        </tr>
+        <tr>
+          <td class="t5">Joe</td>
+          <td class="t5"> Swanson</td>
+          <td class="t5">$300</td>
+        </tr>
+        <tr>
+          <td class="t5">Cleveland</td>
+          <td class="t5">Brown</td>
+          <td class="t5">$250</td>
+        </tr>
+      </table>  
+
+      <h2>Specify the padding for th and td elements</h2>
+      <table class="t6">
+        <tr>
+          <th class="t6"> Firstname</th>
+          <th class="t6">Lastname</th>
+          <th class="t6">Savings</th>
+        </tr>
+        <tr>
+          <td class="t6">Peter</td>
+          <td class="t6">Griffin</td>
+          <td class="t6">$100</td>
+        </tr>
+        <tr>
+          <td class="t6">Lois</td>
+          <td class="t6">Griffin</td>
+          <td class="t6">$150</td>
+        </tr>
+        <tr>
+          <td class="t6">Joe</td>
+          <td class="t6">Swanson</td>
+          <td class="t6">$300</td>
+        </tr>
+        <tr>
+          <td class="t6">Cleveland</td>
+          <td class="t6">Brown</td>
+          <td class="t6">$250</td>
+        </tr>
+      </table>
+
+      <h2>Horizontal dividers and :hover table</h2>
+      <table class="t7">
+        <tr>
+          <th class="t7"> Firstname</th>
+          <th class="t7">Lastname</th>
+          <th class="t7">Savings</th>
+        </tr>
+        <tr>
+          <td class="t7">Peter</td>
+          <td class="t7">Griffin</td>
+          <td class="t7">$100</td>
+        </tr>
+        <tr>
+          <td class="t7">Lois</td>
+          <td class="t7">Griffin</td>
+          <td class="t7">$150</td>
+        </tr>
+        <tr>
+          <td class="t7">Joe</td>
+          <td class="t7">Swanson</td>
+          <td class="t7">$300</td>
+        </tr>
+        <tr>
+          <td class="t7">Cleveland</td>
+          <td class="t7">Brown</td>
+          <td class="t7">$250</td>
+        </tr>
+      </table>
+
+      <h2>Highlighted tables with stylized header</h2>
+      <table class="t8">
+        <caption class="cap1">Table 1.1 Una familia de 10</caption>
+        <tr>
+        <th class="t8">First Name</th>
+        <th class="t8">Last Name</th>
+        <th class="t8">Points</th>
+        </tr>
+        <tr>
+        <td class="t8">Peter</td>
+        <td class="t8">Griffin</td>
+        <td class="t8">$100</td>
+        </tr>
+        <tr>
+        <td class="t8">Lois</td>
+        <td class="t8">Griffin</td>
+        <td class="t8">$150</td>
+        </tr>
+        <tr>
+        <td class="t8">Joe</td>
+        <td class="t8">Swanson</td>
+        <td class="t8">$300</td>
+        </tr>
+        <tr>
+        <td class="t8">Cleveland</td>
+        <td class="t8">Brown</td>
+        <td class="t8">$250</td>
+        </tr>
+      </table>
+
+     <h2> Responsive Table</h2>
+      <div style="overflow-x: auto;">
+        <table class="t9">
+          <tr>
+            <th class="t9">First Name</th>
+            <th class="t9">Last Name</th>
+            <th class="t9">Points</th>
+            <th class="t9">Points</th>
+            <th class="t9">Points</th>
+            <th class="t9">Points</th>
+            <th class="t9">Points</th>
+            <th class="t9">Points</th>
+            <th class="t9">Points</th>
+            <th class="t9">Points</th>
+            <th class="t9">Points</th>
+            <th class="t9">Points</th>
+          </tr>
+          <tr>
+            <td class="t9">Jill</td>
+            <td class="t9">Smith</td>
+            <td class="t9">50</td>
+            <td class="t9">50</td>
+            <td class="t9">50</td>
+            <td class="t9">50</td>
+            <td class="t9">50</td>
+            <td class="t9">50</td>
+            <td class="t9">50</td>
+            <td class="t9">50</td>
+            <td class="t9">50</td>
+            <td class="t9">50</td>
+          </tr>
+          <tr>
+            <td class="t9">Eve</td>
+            <td class="t9">Jackson</td>
+            <td class="t9">94</td>
+            <td class="t9">94</td>
+            <td class="t9">94</td>
+            <td class="t9">94</td>
+            <td class="t9">94</td>
+            <td class="t9">94</td>
+            <td class="t9">94</td>
+            <td class="t9">94</td>
+            <td class="t9">94</td>
+            <td class="t9">94</td>
+          </tr>
+          <tr>
+            <td>Adam</td>
+            <td>Johnson</td>
+            <td class="t9">67</td>
+            <td class="t9">67</td>
+            <td class="t9">67</td>
+            <td class="t9">67</td>
+            <td class="t9">67</td>
+            <td class="t9">67</td>
+            <td class="t9">67</td>
+            <td class="t9">67</td>
+            <td class="t9">67</td>
+            <td class="t9">67</td>
+          </tr>
+        </table>
+      </div>
+
+      <h2>Create a fancy table</h2>
+      <table id="customers">
+        <tr>
+          <th>Company</th>
+          <th>Contact</th>
+          <th>Country</th>
+        </tr>
+        <tr>
+          <td>Alfreds Futterkiste</td>
+          <td>Maria Anders</td>
+          <td>Germany</td>
+        </tr>
+        <tr>
+          <td>Berglunds snabbköp</td>
+          <td>Christina Berglund</td>
+          <td>Sweden</td>
+        </tr>
+        <tr>
+          <td>Centro comercial Moctezuma</td>
+          <td>Francisco Chang</td>
+          <td>Mexico</td>
+        </tr>
+        <tr>
+          <td>Ernst Handel</td>
+          <td>Roland Mendel</td>
+          <td>Austria</td>
+        </tr>
+        <tr>
+          <td>Island Trading</td>
+          <td>Helen Bennett</td>
+          <td>UK</td>
+        </tr>
+        <tr>
+          <td>Königlich Essen</td>
+          <td>Philip Cramer</td>
+          <td>Germany</td>
+        </tr>
+        <tr>
+          <td>Laughing Bacchus Winecellars</td>
+          <td>Yoshi Tannamuri</td>
+          <td>Canada</td>
+        </tr>
+        <tr>
+          <td>Magazzini Alimentari Riuniti</td>
+          <td>Giovanni Rovelli</td>
+          <td>Italy</td>
+        </tr>
+        <tr>
+          <td>North/South</td>
+          <td>Simon Crowther</td>
+          <td>UK</td>
+        </tr>
+        <tr>
+          <td>Paris spécialités</td>
+          <td>Marie Bertrand</td>
+          <td>France</td>
+        </tr>
+      </table>
+</body>
+</html>

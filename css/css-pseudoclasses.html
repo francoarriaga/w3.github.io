@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* unvisited link */
+.pseudo1:link {
+  color: red;
+}
+
+/* visited link */
+.pseudo1:visited {
+  color: green;
+}
+
+/* mouse over link */
+.pseudo1:hover {
+  color: hotpink;
+}
+
+/* selected link */
+.pseudo1:active {
+  color: blue;
+}
+/**/
+a.pseudoone:link {color:#ff0000;}
+a.pseudoone:visited {color:#0000ff;}
+a.pseudoone:hover {color:#ffcc00;}
+
+a.pseudotwo:link {color:#ff0000;}
+a.pseudotwo:visited {color:#0000ff;}
+a.pseudotwo:hover {font-size:150%;}
+
+a.pseudothree:link {color:#ff0000;}
+a.pseudothree:visited {color:#0000ff;}
+a.pseudothree:hover {background:#66ff66;}
+
+a.pseudofour:link {color:#ff0000;}
+a.pseudofour:visited {color:#0000ff;}
+a.pseudofour:hover {font-family:monospace;}
+
+a.pseudofive:link {color:#ff0000;text-decoration:none;}
+a.pseudofive:visited {color:#0000ff;text-decoration:none;}
+a.pseudofive:hover {text-decoration:underline;}
+/**/
+input:focus {
+  background-color: yellow;
+}
+/**/
+.prim1:first-child{
+  color: blue;
+} 
+/**/
+.prim2 .prim3:first-child {
+  color: blue;
+}
+/**/
+.prim3:first-child .prim4 {
+  color: blue;
+}
+/**/
+q:lang(no) {
+  quotes: "~" "~";
+}
+    </style>
+</head>
+<body>
+  <button type="button"><a href="../indic.html">Regresar</a></button> 
+    <h1>° CSS Pseudo classes</h1>
+
+    <h2>Add different colors</h2>
+    <p><b><a href="default.asp" target="_blank" class="pseudo1">This is a link</a></b></p>
+    <p><b>Note:</b> a:hover MUST come after a:link and a:visited in the CSS definition in order to be effective.</p>
+    <p><b>Note:</b> a:active MUST come after a:hover in the CSS definition in order to be effective.</p>
+
+    <h2>Add styles</h2>
+    <p><b><a class="pseudoone" href="default.asp" target="_blank">This link changes color</a></b></p>
+    <p><b><a class="pseudotwo" href="default.asp" target="_blank">This link changes font-size</a></b></p>
+    <p><b><a class="pseudothree" href="default.asp" target="_blank">This link changes background-color</a></b></p>
+    <p><b><a class="pseudofour" href="default.asp" target="_blank">This link changes font-family</a></b></p>
+    <p><b><a class="pseudofive" href="default.asp" target="_blank">This link changes text-decoration</a></b></p>
+
+    <h2>use of :focus</h2>
+    <form action="https://www.google.com" method="get">
+        First name: <input type="text" name="fname"><br><br>
+        Last name: <input type="text" name="lname"><br><br>
+        <input type="submit" value="Submit">
+      </form>
+
+      <h2>:first-child</h2>
+      <div>
+        <p class="prim1" >This is some text.</p>
+        <p class="prim1">This is some text.</p>
+      </div>
+        <div>
+        <p class="prim1">This is some text.</p>
+        <p class="prim1">This is some text.</p>
+        </div>
+
+        <h2>first-child -match first element i with p-</h2>
+        <p class="prim2">I am a <i class="prim3">strong</i> person. I am a <i>strong</i> person.</p>
+        <p class="prim2">I am a <i class="prim3">strong</i> person. I am a <i>strong</i> person.</p>
+
+<h2>first-child -match all elemnts i with p-</h2>
+
+        <p class="prim3">I am a <i class="prim4" style="color: #0000ff;">strong</i> person. I am a <i style="color: #0000ff;">strong</i> person.</p>
+        <p class="prim3">I am a <i class="prim4">strong</i> person. I am a <i>strong</i> person.</p>
+
+        <div>
+        <p class="prim3">I am a <i class="prim4">strong</i> person. I am a <i style="color: #0000ff;">strong</i> person.</p>
+        <div>
+            
+        </div>
+        <p class="prim3">I am a <i class="prim4">strong</i> person. I am a <i >strong</i> person.</p>
+        </div>
+
+    <h2>Use of :lang</h2>
+    <p>Some text <q lang="no" >A quote in a paragraph</q> Some text.</p>
+    <p>In this example, :lang defines the quotation marks for q elements with lang="no":</p>
+</body>
+</html>

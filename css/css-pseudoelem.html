@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.pe1::first-letter {
+  color: #ff0000;
+  font-size: xx-large;
+}
+.pe2::first-line {
+  color: #ff0000;
+  font-variant: small-caps;
+}
+.pe3::first-letter {
+  color: #ff0000;
+  font-size: xx-large;
+}
+
+.pe3::first-line {
+  color: #0000ff;
+  font-variant: small-caps;
+}
+h3::before {
+  content: url(../medios/hacker.gif);
+}
+h4::after {
+  content: url(../medios/hacker.gif);
+}
+    </style>
+</head>
+<body>
+  <button type="button"><a href="../indic.html">Regresar</a></button> 
+    <h1>° CSS Pseudo-elements</h1>
+
+    <h2>Change the first letter</h2>
+    <p class="pe1">You can use the ::first-letter pseudo-element to add a special effect to the first character of a text!</p>
+
+    <h2>Change the first line</h2>
+    <p class="pe2">You can use the ::first-line pseudo-element to add a special effect to the first line of a text. Some more text. And even more, and more, and more, and more, and more, and more, and more, and more, and more, and more, and more, and more.</p>
+
+    
+    <h2>Change the first line and letter</h2>
+    <p class="pe3">You can combine the ::first-letter and ::first-line pseudo-elements to add a special effect to the first letter and the first line of a text!</p>
+
+    <h2>The use of :before</h2>
+    <h3>This is a heading</h3>
+    <p>The ::before pseudo-element inserts content before the content of an element.</p>
+
+    <h3>This is a heading</h3>
+
+    <h2>The use of :after</h2>
+    <h4>This is a heading</h4>
+    <p>The ::after pseudo-element inserts content after the content of an element.</p>
+
+    <h4>This is a heading</h4>
+
+</body>
+</html>

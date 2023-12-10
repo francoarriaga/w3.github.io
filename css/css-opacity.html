@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .opa1 {
+  opacity: 0.5;
+}
+
+.opa1:hover {
+  opacity: 1.0;
+}
+/**/
+.opa2:hover {
+  opacity: 0.5;
+}
+/**/
+div.background {
+  background: url(../medios/paisaje.jpg) repeat;
+  border: 2px solid black;
+}
+
+div.transbox {
+  margin: 30px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.6;
+}
+
+div.transbox .fin {
+  margin: 5%;
+  font-weight: bold;
+  color: #000000;
+}
+    </style>
+</head>
+<body>
+  <button type="button"><a href="../indic.html">Regresar</a></button> 
+    <h1>° CSS Opacity</h1>
+
+    <h2>Transparent images</h2>
+    <p>The opacity property specifies the transparency of an element. The lower the value, the more transparent:</p>
+    <p>Image with 50% opacity:</p>
+    <img src="../medios/paisaje.jpg" alt="Forest" width="170" height="100" style="opacity: .5;">
+
+
+    <h2>Opacity with :hover</h2>
+    <img class="opa1" src="../medios/paisaje.jpg" alt="Forest" width="170" height="100">
+    <img class="opa1" src="../medios/paisajebosque.jpg" alt="Mountains" width="170" height="100">
+    <img class="opa1" src="../medios/paisajelago.jpg" alt="Italy" width="170" height="100">
+
+    <h2>Opacity with efect :hover</h2>
+    <h2>Opacidad con efecto :hover</h2>
+    <img class="opa2" src="../medios/paisaje.jpg" alt="Forest" width="170" height="100" >
+    <img class="opa2" src="../medios/paisajebosque.jpg" alt="Mountains" width="170" height="100">
+    <img class="opa2" src="../medios/paisajelago.jpg" alt="Italy" width="170" height="100">
+
+    <h2>Transparent box/div</h2>
+    <div class="first" style="background-color: green; padding: 10px; opacity: .1;"><p>opacity 0.1</p></div>
+    <div class="second" style="background-color: green; padding: 10px; opacity: .3;"><p>opacity 0.3</p></div>
+    <div class="third" style="background-color: green; padding: 10px; opacity: .6;"><p>opacity 0.6</p></div>
+    <div style="background-color: green; padding: 10px;"><p>opacity 1 (default)</p></div>
+
+    <h2>Transparent  with values RGBA</h2>
+    <p>With RGBA color values:</p>
+    <div class="first" style="background-color: rgba(76, 175, 80, 0.1); padding: 10px;"><p>10% opacity</p></div>
+    <div class="second" style="background-color: rgba(76, 175, 80, 0.3); padding: 10px;"><p>30% opacity</p></div>
+    <div class="third" style="background-color: rgba(76, 175, 80, 0.6); padding: 10px;"><p>60% opacity</p></div>
+    <div style="  background: rgb(76, 175, 80);
+    padding: 10px;"><p>default</p></div>
+
+    <h2>Transparent with text on a box background image</h2>
+    <div class="background">
+        <div class="transbox">
+          <p class="fin">This is some text that is placed in the transparent box.</p>
+        </div>
+      </div>
+
+</body>
+</html>

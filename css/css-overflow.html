@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    div.over1 {
+  background-color: coral;
+  width: 200px;
+  height: 65px;
+  border: 1px solid;
+  overflow: visible;
+}
+div.over2 {
+  background-color: coral;
+  width: 200px;
+  height: 65px;
+  border: 1px solid black;
+  overflow: hidden;
+}
+div.over3 {
+  background-color: coral;
+  width: 200px;
+  height: 100px;
+  border: 1px solid black;
+  overflow: scroll;
+}
+div.over4 {
+  background-color: coral;
+  width: 200px;
+  height: 65px;
+  border: 1px solid black;
+  overflow: auto;
+}
+div.over5 {
+  background-color: coral;
+  width: 200px;
+  height: 65px;
+  border: 1px solid black;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+    </style>
+</head>
+<body>
+  <button type="button"><a href="../indic.html">Regresar</a></button> 
+    <h1>° CSS Overflow</h1>
+
+    <h2>Using overflow: visible - The overflow is not clipped. It renders outside the element's box.</h2>
+    <div class="over1">You can use the overflow property when you want to have better control of the layout. The overflow property specifies what happens if content overflows an element's box.</div>
+    <br> <br> <br>  
+
+    <h2>Using overflow: hidden - The overflow is clipped, and the rest of the content is hidden.</h2>
+    <div class="over2">You can use the overflow property when you want to have better control of the layout. The overflow property specifies what happens if content overflows an element's box.</div>
+
+    <h2>Using overflow: scroll - The overflow is clipped, but a scrollbar is added to see the rest of the content.</h2>
+    <div class="over3">You can use the overflow property when you want to have better control of the layout. The overflow property specifies what happens if content overflows an element's box.</div>
+
+    <h2>Using overflow: auto - If overflow is clipped, a scrollbar should be added to see the rest of the content.</h2>
+    <div class="over4">You can use the overflow property when you want to have better control of the layout. The overflow property specifies what happens if content overflows an element's box.</div>
+
+    <h2>Using overflow-x and overflow-y.</h2>
+    <p>You can also change the overflow of content horizontally or vertically.</p>
+    <p>overflow-x specifies what to do with the left/right edges of the content.</p>
+    <p>overflow-y specifies what to do with the top/bottom edges of the content.</p>
+    <div class="over5">You can use the overflow property when you want to have better control of the layout. The overflow property specifies what happens if content overflows an element's box.</div>
+</body>
+</html>

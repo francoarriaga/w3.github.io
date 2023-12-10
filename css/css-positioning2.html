@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    
+        img {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+}
+div.clip1{
+    position: relative;
+}
+.clip1{
+    clip: rect(0px,60px,200px,0px);
+}
+.main{
+    position: absolute;
+}
+.main2{
+    position: relative;
+    bottom: -250px;
+}
+    </style>
+</head>
+<body>
+  
+    
+    <h1>This is a heading</h1>
+    <div>
+        <h2>Overlaping Elements</h2>
+        <img src="../medios/imghtml.gif">
+        <p>Because the image has a z-index of -1, it will be placed behind the text.</p>
+    </div>
+    
+
+    <h2>Set the shape of an element</h2>  
+    <div class="clip1">
+        <img class="clip1" src="../medios/foco_on.gif" width="100" height="140">
+    </div>
+    
+<div class="main">
+    <div class="main2" >
+    
+        <button type="button"> <a href="../css/css-positioning.html">Regresar</a></button>
+    </div>
+
+</div>
+    
+</body>
+</html>

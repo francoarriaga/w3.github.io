@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+ 
+
+div#n11 {
+  transform: matrix(1, -0.3, 0, 1, 0, 0);
+}
+
+div#n12 {
+  transform: matrix(1, 0, 0.5, 1, 150, 0);
+}
+    </style>
+</head>
+<body>
+    <button type="button"><a href="../indic.html">Regresar</a></button>
+    <h1>° CSS Transform 2d</h1>
+
+    <h2>Transalate</h2>
+    <div style="width: 300px;
+    height: 100px;
+    background-color: yellow;
+    border: 1px solid black;
+    transform: translate(50px,00px);">
+        This div element is moved 50 pixels to the right, and 50 pixels down from its current position.
+        </div>
+
+        <h2>Rotate() -clockwise movement-</h2>
+        <div style=" width: 300px;
+        height: 100px;
+        background-color: yellow;
+        border: 1px solid black;">
+            This a normal div element.
+            </div>
+            
+            <div id="myDiv" style=" transform: rotate(10deg); width: 300px;
+            height: 100px;
+            background-color: yellow;
+            border: 1px solid black;">
+            This div element is rotated clockwise 10 degrees.
+            </div>
+<br>
+    <h2>Rotate() -counter-clockwise movement-</h2>
+    <div style="width: 300px;
+    height: 100px;
+    background-color: yellow;
+    border: 1px solid black;">
+        This a normal div element.
+        </div>
+        
+        <div id="myDiv" style="width: 300px;
+        height: 100px;
+        background-color: yellow;
+        border: 1px solid black;
+        transform: rotate(-20deg);">
+        This div element is rotated counter-clockwise with 20 degrees.
+        </div>
+<br><br>b
+        <h2>Escale()   increase</h2>
+        <div style="margin: 150px;
+        width: 200px;
+        height: 100px;
+        background-color: yellow;
+        border: 1px solid black;
+        transform: scale(2,3);">
+            This div element is two times of its original width, and three times of its original height.
+            </div>
+    <h2>Escale() decrease</h2>
+    <div style=" margin: 10px;
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    border: 1px solid black;
+    transform: scale(0.5,0.5);">
+        This div element is decreased to be half of its original width and height.
+        </div>
+
+    <h2>Method skewX()</h2>
+         <div id="myDiv" style="width: 300px;
+         height: 100px;
+         background-color: yellow;
+         border: 1px solid black;
+         transform: skewX(20deg);"">
+        This div element is skewed 20 degrees along the X-axis.
+        </div>
+
+     <h2>Method skewY()</h2>
+        <br><br><br>
+            <div id="myDiv" style=" width: 300px;
+            height: 100px;
+            background-color: yellow;
+            border: 1px solid black;
+            transform: skewY(20deg);">
+            This div element is skewed 20 degrees along the Y-axis.
+            </div>
+<br><br><br>
+    <h2>Method skew() in "x" and"y"</h2>
+    <br>
+    <div id="myDiv" style="  width: 300px;
+    height: 100px;
+    background-color: yellow;
+    border: 1px solid black;
+    transform: skew(20deg,10deg);">
+        This div element is skewed 20 degrees along the X-axis, and 10 degrees along the Y-axis.
+        </div>
+<br>
+<h2>Matrix(), rotate, move and scale a skew()</h2>
+    <div id="n10" style="width: 300px;
+    height: 100px;
+    background-color: yellow;
+    border: 1px solid black;">
+    This a normal div element.
+    </div>
+    
+    <div id="n11" style="width: 300px;
+    height: 100px;
+    background-color: yellow;
+    border: 1px solid black;">
+    Using the matrix() method.
+    </div>
+    
+    <div id="n12" style="width: 300px;
+    height: 100px;
+    background-color: yellow;
+    border: 1px solid black;">
+    Another use of the matrix() method.
+    </div>
+    
+</body>
+</html>
