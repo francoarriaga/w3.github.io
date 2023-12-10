@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <button type="button"><a href="../indij.html">Regresar</a></button>
+    <h1>° JavaScript Error handling</h1>
+
+
+    <h2>The try...catch statement</h2>
+    <p>How to use <b>catch</b> to display an error.</p>
+
+<p id="demo"></p>
+
+<script>
+try {
+  adddlert("Welcome guest!");
+}
+catch(err) {
+  document.getElementById("demo").innerHTML = err.message;
+}
+</script>
+
+
+<h2>The try...catch statement with a confirm box</h2>
+<h2>JavaScript Error Handling</h2>
+
+<input type="button" value="View message" onclick="message()" />
+
+<script>
+    var txt = "";
+    function message() {
+      try {
+        adddlert("Welcome guest!");
+      }
+      catch(err) {
+        txt = "There was an error on this page.\n\n";
+        txt += "Click OK to continue viewing this page,\n";
+        txt += "or Cancel to return to the home page.\n\n";
+        if(!confirm(txt)) {
+          document.location.href = "https://www.w3schools.com/";
+        }
+      }
+    }
+    </script>
+
+
+<h2>The onerror event</h2>
+<input type="button" value="View message" onclick="message2()" />
+<script>
+    onerror = handleErr;
+    var txt = "";
+    function handleErr(msg, url, l) {
+      txt = "There was an error on this page.\n\n";
+      txt += "Error: " + msg + "\n";
+      txt += "URL: " + url + "\n";
+      txt += "Line: " + l + "\n\n";
+      txt += "Click OK to continue.\n\n";
+      alert(txt);
+      return true;
+    }
+    
+    function message2() {
+       adddlert("Welcome guest!");
+    }
+    </script>
+</body>
+</html>

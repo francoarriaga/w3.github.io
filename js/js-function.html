@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <button type="button"><a href="../indij.html">Regresar</a></button>
+    <h1>° JavaScript Functions</h1>
+
+    <h2>A simple function</h2>
+    <p>When you click "Try it", a function will be called.</p>
+<p>The function will display a message.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+<script>
+    function myFunction() {
+      document.getElementById("demo").innerHTML = "Hello World!";
+    }
+    </script>
+
+    <h2>A function with an argument</h2>
+    <p>Click "Try it" to call a function with arguments</p>
+
+<button onclick="myFunction1('Harry Potter','Wizard')">Try it</button>
+
+<p id="demo1"></p>
+
+<script>
+function myFunction1(name,job) {
+  document.getElementById("demo1").innerHTML = "Welcome " + name + ", the " + job + ".";
+}
+</script>
+
+<h2>A function with an argument 2</h2>
+<p>When you click on one of the buttons, a function will be called. The function will display the argument that is passed to it.</p>
+
+<form> 
+  <input type="button" onclick="myfunction2('Good Morning!')" value="In the Morning"> 
+  <input type="button" onclick="myfunction2('Good Evening!')" value="In the Evening"> 
+</form> 
+
+<p id="demo2"></p>
+<script> 
+    function myfunction2(txt) { 
+      document.getElementById("demo2").innerHTML = txt
+    } 
+    </script> 
+
+    <h2>A function that return a value</h2>
+    <p>Call a function which performs a calculation and returns the result:</p>
+
+<p id="demo4"></p>
+
+<script>
+let x4 = myFunction4(4, 3);
+document.getElementById("demo4").innerHTML = x4;
+
+function myFunction4(a, b) {
+  return a * b;
+}
+</script>
+
+<h2>A function that converts Farenheit to Celsius</h2>
+<p>Invoke (call) a function that converts from Fahrenheit to Celsius:</p>
+<p id="demo5"></p>
+
+<script>
+function toCelsius(f) {
+  return (5/9) * (f-32);
+}
+
+let value = toCelsius(77);
+document.getElementById("demo5").innerHTML = value;
+</script>
+
+<h2>A function call without()</h2>
+<p>Accessing a function without () returns the function and not the function result:</p>
+<p id="demo7"></p>
+
+<script>
+function toCelsius7(f) {
+  return (5/9) * (f-32);
+}
+
+let value7 = toCelsius7;
+document.getElementById("demo7").innerHTML = value7;
+</script>
+</body>
+</html>

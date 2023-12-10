@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button type="button"><a href="../indij.html">Regresar</a></button>
+    <h1>° JavaScript Commnets</h1>
+
+    <h2>Single line commnets</h2>
+    <h3 id="myH"></h1>
+    <p id="myP"></p>
+    
+    <script>
+    // Change heading:
+    document.getElementById("myH").innerHTML = "JavaScript Comments";
+    // Change paragraph:
+    document.getElementById("myP").innerHTML = "My first paragraph.";
+    </script>
+
+<h2>Single line commnets at the end of the line</h2>
+<p id="demo2"></p>
+
+<script>
+let x = 5;      // Declare x, give it the value of 5
+let y = x + 2;  // Declare y, give it the value of x + 2 
+
+// Write y to demo:
+document.getElementById("demo2").innerHTML = y;
+</script>
+
+<h2>Multiline commnets</h2>
+<h3 id="myH2"></h3>
+<p id="myP2"></p>
+
+<script>
+/*
+The code below will change
+the heading with id = "myH"
+and the paragraph with id = "myP"
+*/
+document.getElementById("myH2").innerHTML = "JavaScript Comments";
+document.getElementById("myP2").innerHTML = "My first paragraph.";
+</script>
+
+<h2>Single line commnets to prevent execution</h2>
+<h1 id="myHn"></h1>
+
+<p id="myPn"></p>
+
+<script>
+//document.getElementById("myHn").innerHTML = "My First Page";
+document.getElementById("myPn").innerHTML = "My first paragraph.";
+</script>
+
+<p>The line starting with // is not executed.</p>
+
+
+<h2>Muli line commnets to prevent execution</h2>
+<h1 id="myHz"></h1>
+
+<p id="myPz"></p>
+
+<script>
+/*
+document.getElementById("myH").innerHTML = "Welcome to my Homepage";
+document.getElementById("myP").innerHTML = "This is my first paragraph.";
+*/
+document.getElementById("myPz").innerHTML = "The comment-block is not executed.";
+</script>
+</body>
+</html>

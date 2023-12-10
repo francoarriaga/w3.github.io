@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <button type="button"><a href="../indij.html">Regresar</a></button>
+    <h1>° JavaScript Object properties</h1>
+
+    <h2>Accessing properties using .property</h2>
+    <p>Access a property with .property:</p>
+
+<p id="demo"></p>
+
+<script>
+const person = {
+  firstname: "John",
+  lastname: "Doe",
+  age: 50,
+  eyecolor: "blue"
+};
+
+document.getElementById("demo").innerHTML = person.firstname + " is " + person.age + " years old.";
+</script>
+
+<h2>Accessing properties using [property]</h2>
+<p>Access a property with ["property"]:</p>
+
+<p id="demo2"></p>
+
+<script>
+const person2 = {
+  firstname: "John",
+  lastname: "Doe",
+  age: 50,
+  eyecolor: "blue"
+};
+
+document.getElementById("demo2").innerHTML = person2["firstname"] + " is " + person2["age"] + " years old.";
+</script>
+
+<h2>Accessing properties using for in</h2>
+<p>Looping object property values:</p>
+
+<p id="demo3"></p>
+
+<script>
+const person3 = {
+  fname:"John",
+  lname:"Doe",
+  age:25
+}; 
+
+let txt3 = "";
+for (let x in person3) {
+  txt3 += person3[x] + " ";
+}
+
+document.getElementById("demo3").innerHTML = txt3;
+</script>
+
+
+<h2>Adding new properties to existing objects</h2>
+<p>Add a new property to an existing object:</p>
+
+<p id="demo5"></p>
+
+<script>
+const person5 = {
+  firstname: "John",
+  lastname: "Doe",
+  age: 50,
+  eyecolor: "blue"
+};
+
+person5.nationality = "English";
+document.getElementById("demo5").innerHTML =
+person5.firstname + " is " + person5.nationality + ".";
+</script>
+
+
+<h2>Deleting properties from objects</h2>
+<p>Deleting object properties.</p>
+
+<p id="demo7"></p>
+
+<script>
+const person7 = {
+  firstname: "John",
+  lastname: "Doe",
+  age: 50,
+  eyecolor: "blue"
+};
+
+delete person7.age;
+
+document.getElementById("demo7").innerHTML =
+person7.firstname + " is " + person7.age + " years old.";
+</script>
+</body>
+</html>

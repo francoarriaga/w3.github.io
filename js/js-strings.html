@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <button type="button"><a href="../indij.html">Regresar</a></button>
+    <h1>° JavaScript Strings</h1>
+
+    <h2>String can be written with single an double quotes</h2>
+    <p>Strings are written inside quotes.</p>
+<p>You can use single or double quotes:</p>
+
+<p id="demo"></p>
+
+<script>
+var carName1 = "Volvo XC60";
+var carName2 = 'Volvo XC60';
+
+document.getElementById("demo").innerHTML =
+carName1 + " " + carName2; 
+</script>
+
+<h2>Show some strings examples</h2>
+<p>You can use quotes inside a string, as long as they don't match the quotes surrounding the string:</p>
+
+<p id="demo1"></p>
+
+<script>
+let answer1 = "It's alright";
+let answer2 = "He is called 'Johnny'";
+let answer3 = 'He is called "Johnny"';
+
+document.getElementById("demo1").innerHTML =
+answer1 + "<br>" + 
+answer2 + "<br>" + 
+answer3;
+</script>
+
+<h2>Backlash before quotes accept quotes as quotes</h2>
+<p id="demo2"></p>
+
+<script>
+
+var x = 'It\'s alright';
+var y = "We are the so-called \"Vikings\" from the north.";
+
+document.getElementById("demo2").innerHTML = x + "<br>" + y; 
+
+</script>
+
+<h2>Find the lenght of a string</h2>
+<p>The length of the string is:</p>
+<p id="demo3"></p>
+
+<script>
+let text1 = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+document.getElementById("demo3").innerHTML = text1.length;
+</script>
+
+<h2>You can break a string with a backlash</h2>
+<p>
+    You can break a code line within a text string with a backslash.
+    </p>
+    
+    <p id="demo4"></p>
+    
+    <script>
+    document.getElementById("demo4").innerHTML = "Hello \
+    Dolly!";
+    </script>
+    
+
+    <h2>You cannot break a code with a backlash</h2>
+    <p id="demo5">You cannot break a code line with a \ backslash.</p>
+
+<script>
+document.getElementById("demo5").innerHTML = \
+"Hello Dolly.";
+</script>
+
+<h2>Find the position of the firts occurence of a text in s string -indexOf()</h2>
+<p>The indexOf() method returns the position of the first occurrence of a string in a string.</p>
+<p>The position of the first occurrence of "locate" is:</p>
+<p id="demo6"></p>
+
+<script>
+let text3 = "Please locate where 'locate' occurs!";
+let index3 = text3.indexOf("locate");
+document.getElementById("demo6").innerHTML = index3; 
+</script>
+
+<h2>Search for a text in a string and return the text it found match()</h2>
+<p>Click the button to perfom a global (/g) search for the letters "ain" (/ain) in a string, and display the matches.</p>
+
+<button onclick="myFunction7()">Try it</button>
+
+<p id="demo7"></p>
+
+<script>
+function myFunction7() {
+  var str7 = "The rain in SPAIN stays mainly in the plain"; 
+  var res7 = str7.match(/ain/g);
+  document.getElementById("demo7").innerHTML = res7;
+}
+</script>
+
+<h2>Replace characters in a string  -replace()</h2>
+<p>Replace "Microsoft" with "W3Schools" in the paragraph below:</p>
+
+<button onclick="myFunction8()">Try it</button>
+
+<p id="demo8">Please visit Microsoft!</p>
+
+<script>
+function myFunction8() {
+  let text8 = document.getElementById("demo8").innerHTML;
+  document.getElementById("demo8").innerHTML =
+  text8.replace("Microsoft","W3Schools");
+}
+</script>
+
+<h2>Convert string to uppercase()</h2>
+<p>Convert string to upper case:</p>
+
+<button onclick="myFunction9()">Try it</button>
+
+<p id="demo9">Hello World!</p>
+
+<script>
+function myFunction9() {
+  let text9 = document.getElementById("demo9").innerHTML;
+  document.getElementById("demo9").innerHTML =
+  text9.toUpperCase();
+}
+</script>
+
+
+<h2>Convert string to lowercase()</h2>
+<p>Convert string to lower case:</p>
+
+<button onclick="myFunction10()">Try it</button>
+
+<p id="demo10">Hello World!</p>
+
+<script>
+function myFunction10() {
+  let text10 = document.getElementById("demo10").innerHTML;
+  document.getElementById("demo10").innerHTML =
+  text10.toLowerCase();
+}
+</script>
+
+<h2>Split string into an array -split()</h2>
+<p>Display the first array element, after a string split:</p>
+
+<p id="demo12"></p>
+
+<script>
+let text12 = "a,b,c,d,e,f";
+const myArray = text12.split(",");
+document.getElementById("demo12").innerHTML = myArray[0];
+</script>
+</body>
+</html>

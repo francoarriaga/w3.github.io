@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <button type="button"><a href="../indij.html">Regresar</a></button>
+    <h1>° JSON parse</h1>
+
+    <h2>Use JSON parse</h2>
+    <p id="demo2"></p>
+
+<script>
+const txt2 = '{"name":"John", "age":30, "city":"New York"}'
+const obj2 = JSON.parse(txt2);
+document.getElementById("demo2").innerHTML = obj2.name + ", " + obj2.age;
+</script>
+
+
+<h2>Using JSON parse in an AJAX example</h2>
+<p id="demo1">Jhon</p>
+
+<script>
+const xmlhttp = new XMLHttpRequest();
+xmlhttp.onload = function() {
+  const myObj = JSON.parse(this.responseText);
+  document.getElementById("demo1").innerHTML = myObj.name;
+}
+xmlhttp.open("GET", "json_demo.txt");
+xmlhttp.send();
+</script>
+
+
+<h2>Using JSON parse on an array</h2>
+<p>Content written as an JSON array will be converted into a JavaScript array.</p>
+<p id="demo4">Ford</p>
+
+<script>
+const xmlhttp = new XMLHttpRequest();
+xmlhttp.onload = function() {
+  const myArr = JSON.parse(this.responseText);
+  document.getElementById("demo4").innerHTML = myArr[0];
+}
+xmlhttp.open("GET", "json_demo_array.txt", true);
+xmlhttp.send();
+</script>
+
+
+<h2>Parsing dates</h2>
+<p id="demo6"></p>
+
+<script>
+const text6 = '{"name":"John", "birth":"1986-12-14", "city":"New York"}';
+const obj = JSON.parse(text6);
+obj.birth = new Date(obj.birth);
+document.getElementById("demo6").innerHTML = obj.name + ", " + obj.birth; 
+</script>
+
+<h2>Parsing dates using the reviver function</h2>
+<p id="demo7"></p>
+
+<script>
+const text7 = '{"name":"John", "birth":"1986-12-14", "city":"New York"}';
+const obj7 = JSON.parse(text7, function (key, value) {
+  if (key == "birth") {
+    return new Date(value);
+  } else {
+    return value;
+  }
+});
+document.getElementById("demo7").innerHTML = obj7.name + ", " + obj7.birth; 
+</script>
+
+
+<h2>Parsing functions</h2>
+<p id="demo8"></p>
+
+<script>
+const text8 = '{"name":"John", "age":"function() {return 30;}", "city":"New York"}';
+const obj8 = JSON.parse(text8);
+obj8.age = eval("(" + obj8.age + ")");
+document.getElementById("demo8").innerHTML = obj8.name + ", " + obj8.age(); 
+</script>
+</body>
+</html>

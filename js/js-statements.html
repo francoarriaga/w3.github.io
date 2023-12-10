@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button type="button"><a href="../indij.html">Regresar</a></button>
+    <h1>° JavaScript Statements</h1>
+
+    <h2>JavaScripts are commnads to the browser</h2>
+        <p>In HTML, JavaScript statements are executed by the browser.</p>
+
+        <p id="demo"></p>
+        
+        <script>
+        document.getElementById("demo").innerHTML = "Hello Dolly.";
+        </script>
+
+<h2>JavaScripts code is sequence of statements</h2>
+<p>A <b>JavaScript program</b> is a list of <b>statements</b> to be executed by a computer.</p>
+
+<p id="demo1"></p>
+
+<script>
+let x, y, z;  // Statement 1
+x = 5;        // Statement 2
+y = 6;        // Statement 3
+z = x + y;    // Statement 4
+
+document.getElementById("demo1").innerHTML =
+"The value of z is " + z + ".";  
+</script>
+
+
+<h2>JavaScripts are separated by semicolons</h2>
+<p>JavaScript statements are separated by semicolons.</p>
+
+<p id="demo2"></p>
+
+<script>
+let a, b, c;
+a = 5;
+b = 6;
+c = a + b;
+document.getElementById("demo2").innerHTML = c;
+</script>
+
+<h2>Multiple statements in one line</h2>
+<p>Multiple statements on one line are allowed.</p>
+
+<p id="demo3"></p>
+
+<script>
+    {
+let a, b, c;
+a = 5; b = 6; c = a + b;
+    }
+document.getElementById("demo3").innerHTML = c;
+</script>
+
+<h2>Can be grouped in one block</h2>
+<p>JavaScript code blocks are written between { and }</p>
+
+<button type="button" onclick="myFunction()">Click Me!</button>
+
+<p id="demo4"></p>
+<p id="demo5"></p>
+
+<script>
+function myFunction() {
+  document.getElementById("demo4").innerHTML = "Hello Dolly!";
+  document.getElementById("demo5").innerHTML = "How are you?";
+}
+</script>
+
+<h2>Break code after a code line an operator or a comma</h2>
+<p>
+    The best place to break a code line is after an operator or a comma.
+    </p>
+    
+    <p id="demo10"></p>
+    
+    <script>
+    document.getElementById("demo10").innerHTML =
+    "Hello Dolly!";
+    </script>
+</body>
+</html>

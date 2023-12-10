@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button type="button"><a href="../indij.html">Regresar</a></button>
+    <h1>° JavaScript Array methods</h1>
+
+    <h2>Add an element to an array</h2>
+    <p>The push() method appends a new element to an array:</p>
+
+<p id="demo1"></p>
+<p id="demo2"></p>
+
+<script>
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo1").innerHTML = fruits;
+fruits.push("Kiwi");
+document.getElementById("demo2").innerHTML = fruits;
+</script>
+
+
+<h2>Remove the last element of an array - pop()</h2>
+<p>The pop() method removes the last element from an array.</p>
+
+<p id="demo3"></p>
+<p id="demo4"></p>
+
+<script>
+const fruits4 = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo3").innerHTML = fruits4;
+fruits4.pop();
+document.getElementById("demo4").innerHTML = fruits4;
+</script>
+
+<h2>Join all elements of an array into a string - join()</h2>
+<p>The join() method joins array elements into a string.</p>
+<p>It this example we have used " * " as a separator between the elements:</p>
+
+<p id="demo5"></p>
+
+<script>
+const fruits5 = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo5").innerHTML = fruits.join(" * ");
+</script>
+
+<h2>Join two arrays - concat()</h2>
+<p>The concat() method merges (concatenates) arrays:</p>
+
+<p id="demo6"></p>
+
+<script>
+const myGirls = ["Cecilie", "Lone"];
+const myBoys = ["Emil", "Tobias", "Linus"];
+const myChildren = myGirls.concat(myBoys);
+
+document.getElementById("demo6").innerHTML = myChildren;
+</script>
+
+<h2>Join three arrays - concat()</h2>
+<p>The concat() method merges (concatenates) arrays:</p>
+
+<p id="demo7"></p>
+
+<script>
+const array1 = ["Cecilie", "Lone"];
+const array2 = ["Emil", "Tobias", "Linus"];
+const array3 = ["Robin", "Morgan"];
+
+const myChildren7 = array1.concat(array2, array3); 
+
+document.getElementById("demo7").innerHTML = myChildren7;
+</script>
+
+
+<h2>Add an element to position 2 in an array - splice()</h2>
+<p>The splice() method adds new elements to an array:</p>
+
+<p id="demo8"></p>
+<p id="demo9"></p>
+
+<script>
+const fruits9 = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo8").innerHTML = fruits9;
+
+fruits9.splice(2, 0, "Lemon", "Kiwi");
+document.getElementById("demo9").innerHTML = fruits9;
+</script>
+
+<h2>Convert an array to a string - toString()</h2>
+<p>The toString() method returns an array as a comma separated string:</p>
+
+<p id="demo10"></p>
+
+<script>
+const fruits10 = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo10").innerHTML = fruits10.toString();
+</script>
+
+<h2>Add new elements to the beginning of an array - unshift()</h2>
+<p>The unshift() method adds new elements to the beginning of an array:</p>
+
+<p id="demo11"></p>
+<p id="demo12"></p>
+
+<script>
+const fruits12 = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo11").innerHTML = fruits12;
+fruits12.unshift("Lemon");
+document.getElementById("demo12").innerHTML = fruits12;
+</script>
+
+<h2>Remove the first element of an array - shift()</h2>
+<p>The shift() method removes the first element of an array (and "shifts" the other elements to the left):</p>
+
+<p id="demo13"></p>
+<p id="demo14"></p>
+
+<script>
+const fruits14 = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo13").innerHTML = fruits14;
+fruits14.shift();
+document.getElementById("demo14").innerHTML = fruits14;
+</script>
+
+<h2>Select elements from an array - slice()</h2>
+<p>When the slice() method is given two arguments, it selects array elements from the start argument, and up to (but not included) the end argument:</p>
+
+<p id="demo15"></p>
+
+<script>
+const fruits15 = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+const citrus = fruits15.slice(1,3);
+document.getElementById("demo15").innerHTML = fruits15 + "<br><br>" + citrus;
+</script>
+</body>
+</html>

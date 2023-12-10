@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <button type="button"><a href="../indij.html">Regresar</a></button>
+    <h1>° JavaScript Objects</h1>
+
+
+    <h2>Creating a JavaScript variable</h2>
+    <p id="demo"></p>
+
+<script>
+// Create and display a variable:
+let person = "John Doe";
+document.getElementById("demo").innerHTML = person;
+</script>
+
+<h2>Creating a JavaScript object</h2>
+<p id="demo1"></p>
+
+<script>
+let person1 = {
+  firstName : "John",
+  lastName  : "Doe",
+  age     : 50,
+  eyeColor  : "blue"
+};
+
+document.getElementById("demo1").innerHTML = person1.firstName + " " + person1.lastName;
+</script>
+
+<h2>Creating a JavaScript object (single line)</h2>
+<p>Creating a JavaScript Object:</p>
+
+<p id="demo2"></p>
+
+<script>
+const person2 = {firstName:"John", lastName:"Doe", age:50,eyeColor:"blue"};
+
+document.getElementById("demo2").innerHTML =
+person2.firstName + " is " + person2.age + " years old.";
+</script>
+
+<h2>Creating a JavaScript object (multiple lines)</h2>
+<p>Creating a JavaScript Object:</p>
+
+<p id="demo3"></p>
+
+<script>
+const person3 = {
+  firstName: "John",
+  lastName: "Doe",
+  age: 50,
+  eyeColor: "blue"
+};
+
+document.getElementById("demo3").innerHTML =
+person3.firstName + " is " + person3.age + " years old.";
+</script>
+
+<h2>Creating a JavaScript object using new</h2>
+<p>Creating a JavaScript Object:</p>
+
+<p id="demo4"></p>
+
+<script>
+const person4 = new Object();
+person4.firstName = "John";
+person4.lastName = "Doe";
+person4.age = 50;
+person4.eyeColor = "blue"; 
+
+document.getElementById("demo4").innerHTML =
+person4.firstName + " is " + person4.age + " years old.";
+</script>
+
+<h2>Creating JavaScript objects using a constructor</h2>
+<p id="demo5"></p>
+
+<script>
+// Constructor function for Person objects
+function Person5(first, last, age, eye) {
+  this.firstName = first;
+  this.lastName = last;
+  this.age = age;
+  this.eyeColor = eye;
+}
+
+// Create a Person object
+const myFather5 = new Person5("John", "Doe", 50, "blue");
+
+// Display age
+document.getElementById("demo5").innerHTML =
+"My father is " + myFather5.age + "."; 
+</script>
+
+
+<h2>Creating built-in JavaScript objects</h2>
+<p id="demo6"></p>
+
+<script>
+var x1 = new Object();   // A new Object object
+var x2 = new String();   // A new String object
+var x3 = new Number();   // A new Number object
+var x4 = new Boolean();  // A new Boolean object
+var x5 = new Array();  // A new Array object
+var x6 = new RegExp();   // A new RegExp object
+var x7 = new Function(); // A new Function object
+var x8 = new Date();   // A new Date object
+
+document.getElementById("demo6").innerHTML =
+"x1: " + typeof x1 + "<br>" +
+"x2: " + typeof x2 + "<br>" +
+"x3: " + typeof x3 + "<br>" +
+"x4: " + typeof x4 + "<br>" +
+"x5: " + typeof x5 + "<br>" +
+"x6: " + typeof x6 + "<br>" +
+"x7: " + typeof x7 + "<br>" +
+"x8: " + typeof x8 + "<br>";
+</script>
+
+<p>There is no need to use String(), Number(), Boolean(), Array(), and RegExp()</p>
+<p>Read the JavaScript tutorials.</p>
+
+
+<h2>The best way to create JavaScript variables</h2>
+<p id="demo9"></p>
+
+<script>
+var x19 = {};
+var x29 = "";
+var x39 = 0;
+var x49 = false;
+var x59 = [];
+var x69 = /()/;
+var x79 = function(){};
+
+document.getElementById("demo9").innerHTML =
+"x1: " + typeof x19 + "<br>" +
+"x2: " + typeof x29 + "<br>" +
+"x3: " + typeof x39 + "<br>" +
+"x4: " + typeof x49 + "<br>" +
+"x5: " + typeof x59 + "<br>" +
+"x6: " + typeof x69 + "<br>" +
+"x7: " + typeof x79 + "<br>";
+</script>
+
+
+<h2>JavaScript objects are mutable</h2>
+<p>JavaScript objects are mutable.</p>
+<p>Any changes to a copy of an object will also change the original object:</p>
+
+<p id="demo11"></p>
+
+<script>
+const person11 = {
+  firstName: "John",
+  lastName: "Doe",
+  age:50,
+  eyeColor: "blue"
+};
+
+const x11 = person11;
+x11.age = 10;
+
+document.getElementById("demo11").innerHTML =
+person11.firstName + " is " + person11.age + " years old.";
+</script>
+</body>
+</html>

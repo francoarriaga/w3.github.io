@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <button type="button"><a href="../indij.html">Regresar</a></button>
+    <h1>° JavaScript Regular expresions</h1>
+
+
+    <h2>Search for an expression in a string</h2>
+    <p>Search a string for "w3Schools", and display the position of the match:</p>
+
+<p id="demo"></p>
+
+<script>
+let text = "Visit W3Schools!"; 
+let n = text.search(/w3Schools/i);
+document.getElementById("demo").innerHTML = n;
+</script>
+
+
+<h2>Search for an expression and replace it</h2>
+<p>Replace "Microsoft" with "W3Schools" in the paragraph below:</p>
+
+<button onclick="myFunction2()">Try it</button>
+
+<p id="demo2">Please visit Microsoft!</p>
+
+<script>
+function myFunction2() {
+  let text2 = document.getElementById("demo2").innerHTML;
+  document.getElementById("demo2").innerHTML =
+  text2.replace(/microsoft/i, "W3Schools");
+}
+</script>
+</body>
+</html>

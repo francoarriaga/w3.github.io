@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function myFunction1() {
+          document.getElementById("demox").innerHTML = "Paragraph changed.";
+        }
+        </script>
+</head>
+<body>
+    <button type="button"><a href="../indij.html">Regresar</a></button>
+    <h1>° Where to insert JavaScript</h1>
+
+    <h2>JavaScript in < head > </h2>
+        <p id="demox">A Paragraph.</p>
+        <button type="button" onclick="myFunction1()">Try it</button>
+
+    <h2>JavaScript in < body ></h2>
+        <p id="demo2">A Paragraph.</p>
+
+        <button type="button" onclick="myFunction2()">Try it</button>
+        
+        <script>
+        function myFunction2() {
+          document.getElementById("demo2").innerHTML = "Paragraph changed.";
+        }
+        </script>
+
+    <h2>JavaScript in external file</h2>
+        <p id="demo3">A Paragraph.</p>
+        <button type="button" onclick="myFunction3()">Try it</button> 
+        <p>This example links to "myScript.js".</p>
+        <p>(myFunction is stored in "myScript.js")</p>
+        <script src="../js/javascript/funcionalidad.js"></script>
+
+        <h2>JavaScript in external url</h2>
+            <p id="demo">A Paragraph.</p>
+            <button type="button" onclick="myFunction()">Click Me</button>
+            <p>This example uses a full web URL to link to "myScript.js".</p>
+            <p>(myFunction is stored in "myScript.js")</p>
+            <script src="https://www.w3schools.com/js/myScript.js"></script>
+
+</body>
+</html>

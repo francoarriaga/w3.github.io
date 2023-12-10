@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <button type="button"><a href="../indij.html">Regresar</a></button>
+    <h1>° JavaScript Conditionals</h1>
+
+
+    <h2>The if statement</h2>
+    <p>Display "Good day!" if the hour is less than 18:00:</p>
+
+<p id="demo">Good Evening!</p>
+
+<script>
+if (new Date().getHours() < 18) {
+  document.getElementById("demo").innerHTML = "Good day!";
+}
+</script>
+
+
+<h2>The else statement</h2>
+<p>A time-based greeting:</p>
+
+<p id="demo1"></p>
+
+<script>
+const hour = new Date().getHours(); 
+let greeting;
+
+if (hour < 18) {
+  greeting = "Good day";
+} else {
+  greeting = "Good evening";
+}
+
+document.getElementById("demo1").innerHTML = greeting;
+</script>
+
+<h2>The else if statement</h2>
+<p>A time-based greeting:</p>
+
+<p id="demo2"></p>
+
+<script>
+const time = new Date().getHours();
+let greeting2;
+if (time < 10) {
+  greeting2 = "Good morning";
+} else if (time < 20) {
+  greeting2 = "Good day";
+} else {
+  greeting2 = "Good evening";
+}
+document.getElementById("demo2").innerHTML = greeting2;
+</script>
+
+<h2>Random link</h2>
+<p id="demo3"></p>
+
+<script>
+let text3;
+if (Math.random() < 0.5) {
+  text3 = "<a href='https://w3schools.com'>Visit W3Schools</a>";
+} else {
+  text3 = "<a href='https://wwf.org'>Visit WWF</a>";
+}
+document.getElementById("demo3").innerHTML = text3;
+</script>
+
+<h2>Switch statement</h2>
+<p id="demo7"></p>
+
+<script>
+let day;
+switch (new Date().getDay()) {
+  case 0:
+    day = "Sunday";
+    break;
+  case 1:
+    day = "Monday";
+    break;
+  case 2:
+    day = "Tuesday";
+    break;
+  case 3:
+    day = "Wednesday";
+    break;
+  case 4:
+    day = "Thursday";
+    break;
+  case 5:
+    day = "Friday";
+    break;
+  case  6:
+    day = "Saturday";
+}
+document.getElementById("demo7").innerHTML = "Today is " + day;
+</script>
+</body>
+</html>

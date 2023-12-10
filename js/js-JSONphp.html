@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <button type="button"><a href="../indij.html">Regresar</a></button>
+    <h1>° JSON html</h1>
+
+
+    <h2>Get JSON from a php file</h2>
+    <p id="demo">Jhon</p>
+
+<script>
+const xmlhttp = new XMLHttpRequest();
+
+xmlhttp.onload = function() {
+  const myObj = JSON.parse(this.responseText);
+  document.getElementById("demo").innerHTML = myObj.name;
+}
+xmlhttp.open("GET", "demo_file.php");
+xmlhttp.send();
+</script>
+
+<h1>Get JSON array from php</h1>
+<p>Convert the data into a JavaScript array:</p>
+<p id="demo2">Peter</p>
+
+<script>
+const xmlhttp = new XMLHttpRequest();
+xmlhttp.onload = function() {
+  const myObj = JSON.parse(this.responseText);
+  document.getElementById("demo2").innerHTML = myObj[2];
+}
+xmlhttp.open("GET", "demo_file_array.php");
+xmlhttp.send();
+</script>
+
+
+<h2>Get JSON from a database</h2>
+<p>The JSON received from the PHP file:</p>
+
+<p id="demo3">[{"name":"Alfreds Futterkiste"},{"name":"Ana Trujillo Emparedados y helados"},{"name":"Antonio Moreno Taqueria"},{"name":"Around the Horn"},{"name":"Berglunds snabbkop"},{"name":"Blauer See Delikatessen"},{"name":"Blondel pere et fils"},{"name":"Bolido Comidas preparadas"},{"name":"Bon app'"},{"name":"Bottom-Dollar Marketse"}]</p>
+
+<script>
+const dbParam = JSON.stringify({"limit":10});
+
+const xmlhttp = new XMLHttpRequest();
+xmlhttp.onload = function() {
+  document.getElementById("demo3").innerHTML = this.responseText;
+}
+xmlhttp.open("GET", "json_demo_db.php?x=" + dbParam);
+xmlhttp.send();
+</script>
+
+<h2>Loop through the result from a database</h2>
+<p id="demo4">Alfreds Futterkiste
+    Ana Trujillo Emparedados y helados
+    Antonio Moreno Taqueria
+    Around the Horn
+    Berglunds snabbkop
+    Blauer See Delikatessen
+    Blondel pere et fils
+    Bolido Comidas preparadas
+    Bon app'
+    Bottom-Dollar Marketse</p>
+
+<script>
+const obj = { "limit":10 };
+const dbParam4 = JSON.stringify(obj);
+const xmlhttp = new XMLHttpRequest();
+xmlhttp.onload = function() {
+  myObj = JSON.parse(this.responseText);
+  let text = ""
+  for (let x in myObj) {
+    text += myObj[x].name + "<br>";
+  }
+  document.getElementById("demo4").innerHTML = text;
+};
+xmlhttp.open("GET", "json_demo_db.php?x=" + dbParam4);
+xmlhttp.send();
+</script>
+
+<p>Try changing the "limit" property from 10 to 5.</p>
+
+
+<h2>Send JSON using POST method</h2>
+<p id="demo7">Alfreds Futterkiste
+    Ana Trujillo Emparedados y helados
+    Antonio Moreno Taqueria
+    Around the Horn
+    Berglunds snabbkop
+    Blauer See Delikatessen
+    Blondel pere et fils
+    Bolido Comidas preparadas
+    Bon app'
+    Bottom-Dollar Marketse</p>
+
+<script>
+const dbParam7 = JSON.stringify({"limit":10});
+const xmlhttp = new XMLHttpRequest();
+xmlhttp.onload = function() {
+  myObj = JSON.parse(this.responseText);
+  let text = "";
+  for (let x in myObj) {
+    text += myObj[x].name + "<br>";
+  }
+  document.getElementById("demo7").innerHTML = text;
+}
+xmlhttp.open("POST", "json_demo_db_post.php");
+xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+xmlhttp.send("x=" + dbParam7);
+</script>
+
+<p>Try changing the "limit" property from 10 to 5.</p>
+</body>
+</html>

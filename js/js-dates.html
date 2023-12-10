@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="startTime()">
+    <button type="button"><a href="../indij.html">Regresar</a></button>
+    <h1>° JavaScript Dates</h1>
+
+    <h2>Use Date() to display today's date and time</h2>
+    <p>new Date() without arguments, creates a date object with the current date and time:</p>
+
+<p id="demo"></p>
+
+<script>
+const d = new Date();
+document.getElementById("demo").innerHTML = d;
+</script>
+
+<h2>Use getFullYear() display the year</h2>
+<p>Return the full year of a date object:</p>
+
+<p id="demo1"></p>
+
+<script>
+    {
+const d = new Date();
+document.getElementById("demo1").innerHTML = d.getFullYear();}
+</script>
+
+<h2>Use getTime() to calculate the number of milliseconds since 1970</h2>
+<p></p>
+<p>Return the number of milliseconds since midnight January 1, 1970:</p>
+
+<p id="demo2"></p>
+
+<script>
+    {
+const d = new Date();
+document.getElementById("demo2").innerHTML = d.getTime();}
+</script>
+
+<h2>Use setFullYear() to set a specific date</h2>
+<p id="demo3"></p>
+
+<script>
+    {
+const d = new Date();
+d.setFullYear(2020);
+document.getElementById("demo3").innerHTML = d;}
+</script>
+
+<h2>Use toUTCString() to convert today's date (according to UTC) to a string</h2>
+<p>Convert a date to a string using the UTC standard:</p>
+
+<p id="demo4"></p>
+
+<script>
+    {
+const d = new Date();
+document.getElementById("demo4").innerHTML = d.toUTCString();}
+</script>
+
+<h2>Use getDay() to display the weekday as a number</h2>
+<p>Return the weekday as a number:</p>
+
+<p id="demo5"></p>
+
+<script>
+    {
+const d = new Date();
+document.getElementById("demo5").innerHTML = d.getDay();}
+</script>
+
+<h2>Use getDay() and an array to display the weekday as a name</h2>
+<p>Return the weekday as a number.</p>
+<p>You can use an array of names to return the weekday as a name:</p>
+
+<p id="demo6"></p>
+
+<script>
+    {
+const days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+
+const d = new Date();
+let day = days[d.getDay()];
+document.getElementById("demo6").innerHTML = day;}
+</script>
+
+
+<h2>Display a clock</h2>
+<div id="txt"></div>
+
+<script>
+    
+function startTime() {
+  const today = new Date();
+  let h = today.getHours();
+  let m = today.getMinutes();
+  let s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;
+  setTimeout(startTime, 1000);
+}
+
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
+    
+</script>
+</body>
+</html>

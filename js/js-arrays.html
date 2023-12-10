@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <button type="button"><a href="../indij.html">Regresar</a></button>
+    <h1>° JavaScript Arrays</h1>
+
+
+    <h2>Create an array I</h2>
+    <p id="demo"></p>
+
+<script>
+const cars = ["Saab", "Volvo", "BMW"];
+document.getElementById("demo").innerHTML = cars;
+</script>
+
+<h2>Create an array II</h2>
+<p id="demo1"></p>
+
+<script>
+const cars1 = [
+  "Saab",
+  "Volvo",
+  "BMW"
+];
+document.getElementById("demo1").innerHTML = cars;
+</script>
+
+
+<h2>Access an array element</h2>
+<p>JavaScript array elements are accessed using numeric indexes (starting from 0).</p>
+
+<p id="demo2"></p>
+
+<script>
+const cars2 = ["Saab", "Volvo", "BMW"];
+document.getElementById("demo2").innerHTML = cars[0];
+</script>
+
+<h2>Change an array element</h2>
+<p>Array elements are accessed using their index number:</p>
+
+<p id="demo3"></p>
+<p id="demo4"></p>
+
+<script>
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo3").innerHTML = fruits;
+fruits[0] = "Kiwi";
+document.getElementById("demo4").innerHTML = fruits;
+</script>
+
+<h2>Access a full array</h2>
+<p id="demo5"></p>
+
+<script>
+const cars5 = ["Saab", "Volvo", "BMW"];
+document.getElementById("demo5").innerHTML = cars;
+</script>
+
+<h2>Find the length of an array</h2>
+<p>The length property returns the length of an array:</p>
+
+<p id="demo6"></p>
+
+<script>
+const fruits6 = ["Banana", "Orange", "Apple", "Mango"];
+let size6 = fruits6.length;
+document.getElementById("demo6").innerHTML = size6;
+</script>
+
+<h2>Loop through an array</h2>
+<p id="demo7"></p>
+
+<script>
+const fruits7 = ["Banana", "Orange", "Apple", "Mango"];
+let fLen = fruits7.length;
+
+let text7 = "<ul>";
+for (let i = 0; i < fLen; i++) {
+  text7 += "<li>" + fruits7[i] + "</li>";
+}
+text7 += "</ul>";
+
+document.getElementById("demo7").innerHTML = text7;
+</script>
+
+<h2>Add an element to an array</h2>
+<p>The length property provides an easy way to append new elements to an array without using the push() method.</p>
+
+<button onclick="myFunction8()">Try it</button>
+
+<p id="demo8"></p>
+
+<script>
+const fruits8 = ["Banana", "Orange", "Apple"];
+document.getElementById("demo8").innerHTML = fruits8;
+
+function myFunction8() {
+  fruits8[fruits8.length] = "Lemon";
+  document.getElementById("demo8").innerHTML = fruits8;
+}
+</script>
+
+<h2>Add undefined "holes" to an array</h2>
+<p>Adding elements with high indexes can create undefined "holes" in an array.</p>
+
+<p id="demo9"></p>
+
+<script>
+const fruits9 = ["Banana", "Orange", "Apple"];
+fruits9[6] = "Lemon";
+
+let fLen9 = fruits9.length;
+let text9 = "";
+for (i = 0; i < fLen9; i++) {
+  text9 += fruits9[i] + "<br>";
+}
+
+document.getElementById("demo9").innerHTML = text9;
+</script>
+
+<h2>How to recognize an array i</h2>
+<p>The instanceof operator returns true when used on an array:</p>
+
+<p id="demo10"></p>
+
+<script>
+var fruits10 = ["Banana", "Orange", "Apple"];
+document.getElementById("demo10").innerHTML = fruits10 instanceof Array;
+</script>
+
+<h2>How to recognize an array ii</h2>
+<p id="demo12"></p>
+
+<script>
+const fruits12 = ["Banana", "Orange", "Apple"];
+document.getElementById("demo12").innerHTML = Array.isArray(fruits12);
+</script>
+</body>
+</html>

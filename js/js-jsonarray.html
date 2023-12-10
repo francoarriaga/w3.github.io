@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <button type="button"><a href="../indij.html">Regresar</a></button>
+    <h1>° JSON arrays</h1>
+
+    <h2>Accessing array values</h2>
+    <p id="demo2"></p>
+
+<script>
+const myJSON2 = '{"name":"John", "age":30, "cars":["Ford", "BMW", "Fiat"]}';
+const myObj2 = JSON.parse(myJSON2);
+
+document.getElementById("demo2").innerHTML = myObj2.cars[0];
+</script>
+
+<h2>Looping through an array using for-in</h2>
+<p id="demo3"></p>
+
+<script>
+const myJSON3 = '{"name":"John", "age":30, "cars":["Ford", "BMW", "Fiat"]}';
+const myObj3 = JSON.parse(myJSON3);
+
+let text = "";
+for (let i in myObj3.cars) {
+  text += myObj3.cars[i] + ", ";
+}
+
+document.getElementById("demo3").innerHTML = text;
+</script>
+
+
+<h2>Looping through an array using for</h2>
+<p id="demo4"></p>
+
+<script>
+const myJSON4 = '{"name":"John", "age":30, "cars":["Ford", "BMW", "Fiat"]}';
+const myObj4 = JSON.parse(myJSON4);
+
+let text4 = "";
+for (let i = 0; i < myObj4.cars.length; i++) {
+  text4 += myObj4.cars[i] + ", ";
+}
+
+document.getElementById("demo4").innerHTML = text4;
+</script>
+
+<h2>Access nested JSON arrays</h2>
+<p id="demo5"></p>
+
+<script>
+let x5 = "";
+const myObj5 = {
+  "name":"John",
+  "age":30,
+  "cars": [
+    {"name":"Ford", "models":["Fiesta", "Focus", "Mustang"]},
+    {"name":"BMW", "models":["320", "X3", "X5"]},
+    {"name":"Fiat", "models":["500", "Panda"] }
+  ]
+}
+
+for (let i in myObj5.cars) {
+  x5 += "<h2>" + myObj5.cars[i].name + "</h2>";
+  for (let j in myObj5.cars[i].models) {
+    x5 += myObj5.cars[i].models[j] + "<br>";
+  }
+}
+
+document.getElementById("demo5").innerHTML = x5;
+</script>
+
+<h2>Modify array values</h2>
+<p id="demo6"></p>
+
+<script>
+let x6 = "";
+const myObj6 = {
+  "name":"John",
+  "age":30,
+  "cars":[ "Ford", "BMW", "Fiat" ]
+};
+
+myObj6.cars[1] = "Mercedes";
+
+for (let i in myObj6.cars) {
+  x6 += myObj6.cars[i] + "<br>";
+}
+
+document.getElementById("demo6").innerHTML = x6;
+</script>
+
+
+<h2>Delete array items</h2>
+<p>Delete array properties:</p>
+<p id="demo7"></p>
+
+<script>
+let x7 = "";
+const myObj7 = {
+  "name":"John",
+  "age":30,
+  "cars": ["Ford","BMW","Fiat"]
+}
+
+delete myObj7.cars[1];
+
+for (let i in myObj7.cars) {
+  x7 += myObj7.cars[i] + "<br>";
+}
+
+document.getElementById("demo7").innerHTML = x7;
+</script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button type="button"><a href="../indij.html">Regresar</a></button>
+    <h1>° JSON stringify</h1>
+
+
+    <h2>Use JSON stringify</h2>
+    <p id="demo"></p>
+
+<script>
+const obj = {name: "John", age: 30, city: "New York"};
+const myJSON = JSON.stringify(obj);
+document.getElementById("demo").innerHTML = myJSON;
+</script>
+
+<h2>Using JSON stringify on an array</h2>
+<p id="demo2"></p>
+
+<script>
+const arr2 = ["John", "Peter", "Sally", "Jane"];
+const myJSON2 = JSON.stringify(arr2);
+document.getElementById("demo2").innerHTML = myJSON2;
+</script>
+
+<h2>Stringify dates</h2>
+<p id="demo3"></p>
+
+<script>
+const obj3 = {name: "John", today: new Date(), city: "New York"};
+const myJSON3 = JSON.stringify(obj3);
+document.getElementById("demo3").innerHTML = myJSON3;
+</script>
+
+<h2>Stringify functions</h2>
+<p id="demo4"></p>
+
+<script>
+const obj4 = {name: "John", age: function () {return 30;}, city: "New York"};
+const myJSON4 = JSON.stringify(obj4);
+document.getElementById("demo4").innerHTML = myJSON4;
+</script>
+
+
+<h2>Stringify functions using the toString() method</h2>
+<p>Convert functions into strings to keep them in the JSON object.</p>
+
+<p id="demo7"></p>
+
+<script>
+const obj7 = {name: "John", age: function () {return 30;}, city: "New York"};
+obj7.age = obj7.age.toString();
+const myJSON7 = JSON.stringify(obj7);
+document.getElementById("demo7").innerHTML = myJSON7;
+</script>
+</body>
+</html>

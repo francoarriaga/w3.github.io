@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <button type="button"><a href="../indij.html">Regresar</a></button>
+    <h1>° JavaScript Array sort</h1>
+
+
+    <h2>Sort an array in ascending order</h2>
+    <p>The sort() method sorts an array alphabetically:</p>
+
+<p id="demo1"></p>
+<p id="demo2"></p>
+
+<script>
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo1").innerHTML = fruits;
+
+fruits.sort();
+document.getElementById("demo2").innerHTML = fruits;
+</script>
+
+<h2>Sort an array in descending order</h2>
+<p>The reverse() method reverses the elements in an array.</p>
+<p>By combining sort() and reverse() you can sort an array in descending order:</p>
+
+<p id="demo3"></p>
+<p id="demo4"></p>
+
+<script>
+// Create and display an array:
+const fruits4 = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo3").innerHTML = fruits4;
+
+// First sort the array
+fruits4.sort();
+
+// Then reverse it:
+fruits4.reverse();
+
+document.getElementById("demo4").innerHTML = fruits4;
+</script>
+
+<h2>Sort an array of numbers ascending</h2>
+<p>Sort the array in ascending order:</p>
+
+<p id="demo5"></p>
+<p id="demo6"></p>
+
+<script>
+const points6 = [40, 100, 1, 5, 25, 10];
+document.getElementById("demo5").innerHTML = points6;  
+
+points6.sort(function(a, b){return a - b});
+document.getElementById("demo6").innerHTML = points6;
+</script>
+
+
+<h2>Sort an array of numbers descending</h2>
+<p>Sort the array in descending order:</p>
+
+<p id="demo7"></p>
+<p id="demo8"></p>
+
+<script>
+const points8 = [40, 100, 1, 5, 25, 10];
+document.getElementById("demo7").innerHTML = points8;
+
+points8.sort(function(a, b){return b - a});
+document.getElementById("demo8").innerHTML = points8;
+</script>
+
+<h2>Sort numbers (alphabetically or numerically)</h2>
+<p>Click the buttons to sort the array alphabetically or numerically.</p>
+
+<button onclick="myFunction9()">Sort Alphabetically</button>
+<button onclick="myFunction10()">Sort Numerically</button>
+
+<p id="demo10"></p>
+
+<script>
+const points10 = [40, 100, 1, 5, 25, 10];
+document.getElementById("demo10").innerHTML = points10;  
+
+function myFunction9() {
+    points10.sort();
+  document.getElementById("demo10").innerHTML = points10;
+}
+function myFunction10() {
+    points10.sort(function(a, b){return a - b});
+  document.getElementById("demo10").innerHTML = points10;
+}
+</script>
+
+<h2>Sort array numbers in random order</h2>
+<p>Click the button (again and again) to sort the array in random order.</p>
+
+<button onclick="myFunction11()">Try it</button>
+<p id="demo11"></p>
+
+<script>
+const points11 = [40, 100, 1, 5, 25, 10];
+document.getElementById("demo11").innerHTML = points11;  
+
+function myFunction11() {
+  points11.sort(function(){return 0.5 - Math.random()});
+  document.getElementById("demo11").innerHTML = points11;
+}
+</script>
+
+
+<h2>Find the lowest number in an array</h2>
+<p>The lowest number is <span id="demo12"></span>.</p>
+
+<script>
+const points12 = [40, 100, 1, 5, 25, 10];
+points12.sort(function(a, b){return a-b});
+document.getElementById("demo12").innerHTML = points12[0];
+</script>
+
+
+<h2>Find the highest number in an array</h2>
+<p>The highest number is <span id="demo13"></span>.</p>
+
+<script>
+const points13 = [40, 100, 1, 5, 25, 10];
+points13.sort(function(a, b){return b-a});
+document.getElementById("demo13").innerHTML = points13[0];
+</script>
+
+<h2>Find the lowest number in an array using Math.min()</h2>
+<p>The lowest number is <span id="demo14"></span>.</p>
+
+<script>
+const points14 = [40, 100, 1, 5, 25, 10];
+document.getElementById("demo14").innerHTML = myArrayMin(points14);
+
+function myArrayMin(arr) {
+  return Math.min.apply(null, arr);
+}
+</script>
+
+<h2>Find the highest number in an array using Math.max()</h2>
+<p>The highest number is <span id="demo15"></span>.</p>
+
+<script>
+const points15 = [40, 100, 1, 5, 25, 10];
+document.getElementById("demo15").innerHTML = myArrayMax(points15);
+
+function myArrayMax(arr) {
+  return Math.max.apply(null, arr);
+}
+</script>
+
+<h2>Using a "homemade" myArrayMin method</h2>
+<p>The lowest number is <span id="demo16"></span>.</p>
+
+<script>
+const points16 = [40, 100, 1, 5, 25, 10];
+document.getElementById("demo16").innerHTML = myArrayMin16(points16);
+
+function myArrayMin16(arr) {
+  let len = arr.length;
+  let min = Infinity;
+  while (len--) {
+    if (arr[len] < min) {
+      min = arr[len];
+    }
+  }
+  return min;
+}
+</script>
+
+<h2>Using a "homemade" myArrayMax method</h2>
+<p>The highest number is <span id="demo17"></span>.</p>
+
+<script>
+const points17 = [40, 100, 1, 5, 25, 10];
+document.getElementById("demo17").innerHTML = myArrayMax(points17);
+
+function myArrayMax17(arr) {
+  let len = arr.length;
+  let max = -Infinity;
+  while (len--) {
+    if (arr[len] > max) {
+      max = arr[len];
+    }
+  }
+  return max;
+}
+</script>
+
+<h2>Sort objects by numeric properties</h2>
+<p>Sort car objects on age:</p>
+
+<p id="demo19"></p>
+
+<script>
+const cars19 = [
+  {type:"Volvo", year:2016},
+  {type:"Saab", year:2001},
+  {type:"BMW", year:2010}
+];
+
+displayCars19();
+
+cars19.sort(function(a, b){return a.year - b.year});
+displayCars19();
+
+function displayCars19() {
+  document.getElementById("demo19").innerHTML =
+  cars19[0].type + " " + cars19[0].year + "<br>" +
+  cars19[1].type + " " + cars19[1].year + "<br>" +
+  cars19[2].type + " " + cars19[2].year;
+}
+</script>
+
+
+<h2>Sort objects by string properties</h2>
+<p>Click the buttons to sort car objects on type.</p>
+
+<button onclick="myFunction20()">Sort</button>
+<p id="demo20"></p>
+
+<script>
+const cars20 = [
+  {type:"Volvo", year:2016},
+  {type:"Saab", year:2001},
+  {type:"BMW", year:2010}
+];
+
+displayCars20();
+
+function myFunction20() {
+  cars20.sort(function(a, b){
+    let x = a.type.toLowerCase();
+    let y = b.type.toLowerCase();
+    if (x < y) {return -1;}
+    if (x > y) {return 1;}
+    return 0;
+  });
+  displayCars20();
+}
+
+function displayCars20() {
+  document.getElementById("demo20").innerHTML =
+  cars20[0].type + " " + cars20[0].year + "<br>" +
+  cars20[1].type + " " + cars20[1].year + "<br>" +
+  cars20[2].type + " " + cars20[2].year;
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button type="button"><a href="../indij.html">Regresar</a></button>
+    <h1>° JavaScript String concatenation</h1>
+
+    <h2>Adding two string together using the concatenation +</h2>
+    <p>The + operator concatenates (adds) strings.</p>
+
+<p id="demo"></p>
+
+<script>
+var txt1 = "What a very";
+var txt2 = "nice day";
+document.getElementById("demo").innerHTML = txt1 + txt2;
+</script>
+
+<h2>Adding two string together with a space in the first string</h2>
+<p>The + operator concatenates (adds) strings.</p>
+
+<p id="demo1"></p>
+
+<script>
+let text1 = "What a very ";
+let text2 = "nice day";
+document.getElementById("demo1").innerHTML = text1 + text2;
+</script>
+
+<h2>Adding two string together with a space in between</h2>
+<p>The + operator concatenates (adds) strings.</p>
+
+<p id="demo2"></p>
+
+<script>
+var txt5 = "What a very";
+var txt6 = "nice day";
+document.getElementById("demo2").innerHTML = txt5 + " " + txt6;
+</script>
+
+<h2>Adding two string together using +=</h2>
+<p>The assignment operator += can concatenate strings.</p>
+
+<p id="demo3"></p>
+
+<script>
+let text7 = "What a very ";
+text7 += "nice day";
+document.getElementById("demo3").innerHTML = text7;
+</script>
+
+<h2>Adding string and numbers</h2>
+<p>Adding a number and a string, returns a string.</p>
+
+<p id="demo7"></p>
+
+<script>
+    {
+let x = 5 + 5;
+let y = "5" + 5;
+let z = "Hello" + 5;
+document.getElementById("demo7").innerHTML =
+x + "<br>" + y + "<br>" + z;
+    }
+</script>
+</body>
+</html>

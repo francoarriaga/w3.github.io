@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <button type="button"><a href="../indij.html">Regresar</a></button>
+    <h1>° JavaScript Loops</h1>
+
+
+    <h2>For loop</h2>
+    <p id="demo"></p>
+
+<script>
+let text = "";
+
+for (let i = 0; i < 5; i++) {
+  text += "The number is " + i + "<br>";
+}
+
+document.getElementById("demo").innerHTML = text;
+</script>
+
+<h2>Looping an Array</h2>
+<p id="demo2"></p>
+
+<script>
+const cars2 = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"];
+
+let text2 = "";
+for (let i = 0; i < cars2.length; i++) {
+  text2 += cars2[i] + "<br>";
+}
+
+document.getElementById("demo2").innerHTML = text2;
+</script>
+
+<h2>Looping through HTML headers</h2>
+<p>Loop from 1 to 6, to make HTML headings.</p>
+
+<div id="demo3"></div>
+
+<script>
+var x3 ="", i;
+for (i=1; i<=6; i++) {
+  x3 = x3 + "<h" + i + ">Heading " + i + "</h" + i + ">";
+}
+document.getElementById("demo3").innerHTML = x3;
+</script>
+
+
+<h2>While loop</h2>
+<p id="demo4"></p>
+
+<script>
+let text4 = "";
+let n = 0;
+while (n < 10) {
+  text4 += "<br>The number is " + n;
+  n++;
+}
+document.getElementById("demo4").innerHTML = text4;
+</script>
+
+<h2>Do While loop</h2>
+<p id="demo5"></p>
+
+<script>
+let text5 = ""
+let m = 0;
+
+do {
+  text5 += "<br>The number is " + m;
+  m++;
+}
+while (m < 10);  
+
+document.getElementById("demo5").innerHTML = text5;
+</script>
+
+<h2>Break a loop</h2>
+<p>A loop with a <b>break</b> statement.</p>
+
+<p id="demo7"></p>
+
+<script>
+let text7 = "";
+for (let o = 0; o < 10; o++) {
+  if (o === 3) { break; }
+  text7 += "The number is " + o + "<br>";
+}
+
+document.getElementById("demo7").innerHTML = text7;
+</script>
+
+<h2>Break and continue a loop</h2>
+<p>A loop with a <b>continue</b> statement.</p>
+
+<p>A loop which will skip the step where i = 3.</p>
+
+<p id="demo8"></p>
+
+<script>
+let text8 = "";
+for (let i = 0; i < 10; i++) {
+  if (i === 3) { continue; }
+  text8 += "The number is " + i + "<br>";
+}
+document.getElementById("demo8").innerHTML = text8;
+</script>
+
+
+<h2>Use a for...in statement to loop through the elements of an  object</h2>
+<p>The for in statement loops through the properties of an object:</p>
+
+<p id="demo9"></p>
+
+<script>
+const person = {fname:"John", lname:"Doe", age:25}; 
+
+let txt9 = "";
+for (let x in person) {
+  txt9 += person[x] + " ";
+}
+
+document.getElementById("demo9").innerHTML = txt9;
+</script>
+</body>
+</html>

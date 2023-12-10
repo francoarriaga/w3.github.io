@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <button type="button"><a href="../indij.html">Regresar</a></button>
+    <h1>° JavaScript Events</h1>
+
+    <h2>An onclick event changes and html element</h2>
+    <button onclick="document.getElementById('demo').innerHTML=Date()">The time is?</button>
+
+<p id="demo"></p>
+
+
+<h2>An onclick event changes its own element</h2>
+<button onclick="this.innerHTML=Date()">The time is?</button>
+
+
+<h2>An onclick event call a function</h2>
+<p>Click the button to display the date.</p>
+
+<button onclick="displayDate()">The time is?</button>
+
+<script>
+function displayDate() {
+  document.getElementById("demo3").innerHTML = Date();
+}
+</script>
+
+<p id="demo3"></p>
+</body>
+</html>

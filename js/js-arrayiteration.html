@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <button type="button"><a href="../indij.html">Regresar</a></button>
+    <h1>° JavaScript Array iteration</h1>
+
+
+    <h2>Array.forEach()</h2>
+    <p>Call a function once for each array element:</p>
+
+<p id="demo"></p>
+
+<script>
+const numbers = [45, 4, 9, 16, 25];
+
+let txt = "";
+numbers.forEach(myFunction);
+document.getElementById("demo").innerHTML = txt;
+
+function myFunction(value, index, array) {
+  txt += value + "<br>"; 
+}
+</script>
+
+<h2>Array.map()</h2>
+<p>Create a new array by performing a function on each array element:</p>
+
+<p id="demo1"></p>
+
+<script>
+const numbers1 = [45, 4, 9, 16, 25];
+const numbers2 = numbers1.map(myFunction);
+
+document.getElementById("demo1").innerHTML = numbers2;
+
+function myFunction(value, index, array) {
+  return value * 2;
+}
+</script>
+
+<h2>Array.filter()</h2>
+<p>Create a new array from all array elements that passes a test:</p>
+
+<p id="demo3"></p>
+
+<script>
+const numbers3 = [45, 4, 9, 16, 25];
+const over18 = numbers3.filter(myFunction3);
+
+document.getElementById("demo3").innerHTML = over18;
+
+function myFunction3(value, index, array) {
+  return value > 18;
+}
+</script>
+
+<h2>Array.reduce()</h2>
+<p>Find the sum of all numbers in an array:</p>
+
+<p id="demo4"></p>
+
+<script>
+const numbers4 = [45, 4, 9, 16, 25];
+let sum = numbers.reduce(myFunction4);
+
+document.getElementById("demo4").innerHTML = "The sum is " + sum;
+
+function myFunction4(total, value, index, array) {
+  return total + value;
+}
+</script>
+
+<h2>Array.reduceRight()</h2>
+<p>Find the sum of all numbers in an array:</p>
+
+<p id="demo5"></p>
+
+<script>
+const numbers5 = [45, 4, 9, 16, 25];
+let sum5 = numbers5.reduceRight(myFunction5);
+
+document.getElementById("demo5").innerHTML = "The sum is " + sum;
+
+function myFunction5(total, value, index, array) {
+  return total + value;
+}
+</script>
+
+<h2>Array.every()</h2>
+<p>The every() method checks if all array values pass a test.</p>
+
+<p id="demo6"></p>
+
+<script>
+const numbers6 = [45, 4, 9, 16, 25];
+let allOver18 = numbers6.every(myFunction6);
+
+document.getElementById("demo6").innerHTML = "All over 18 is " + allOver18;
+
+function myFunction6(value, index, array) {
+  return value > 18;
+}
+</script>
+
+<h2>Array.some()</h2>
+<p>The some() method checks if some array values pass a test:</p>
+
+<p id="demo7"></p>
+
+<script>
+const numbers7 = [45, 4, 9, 16, 25];
+let someOver18 = numbers7.some(myFunction7);
+
+document.getElementById("demo7").innerHTML = "Some over 18 is " + someOver18;
+
+function myFunction7(value, index, array) {
+  return value > 18;
+}
+</script>
+
+<h2>Array.indexOf()</h2>
+<p id="demo8"></p>
+
+<script>
+const fruits8 = ["Apple", "Orange", "Apple", "Mango"];
+let position8 = fruits8.indexOf("Apple") + 1;
+
+document.getElementById("demo8").innerHTML = "Apple is found in position " + position8;
+</script>
+
+
+<h2>Array.lastIndexOf()</h2>
+<p id="demo9"></p>
+
+<script>
+const fruits9 = ["Apple", "Orange", "Apple", "Mango"];
+let position9 = fruits9.lastIndexOf("Apple") + 1;
+
+document.getElementById("demo9").innerHTML = "Apple is found in position " + position9;
+</script>
+
+<h2>Array.find()</h2>
+<p id="demo10"></p>
+
+<script>
+const numbers10 = [4, 9, 16, 25, 29];
+let first10 = numbers10.find(myFunction10);
+
+document.getElementById("demo10").innerHTML = "First number over 18 is " + first10;
+
+function myFunction10(value, index, array) {
+  return value > 18;
+}
+</script>
+
+
+<h2>Array.findIndex()</h2>
+<p id="demo12"></p>
+
+<script>
+const numbers12 = [4, 9, 16, 25, 29];
+
+document.getElementById("demo12").innerHTML = "First number over 18 has index " + numbers12.findIndex(myFunction12);
+
+function myFunction12(value, index, array) {
+  return value > 18;
+}
+</script>
+</body>
+</html>
