@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style> 
+        .flex-container {
+          display: -webkit-flex;
+          display: flex;  
+          -webkit-flex-flow: row wrap;
+          flex-flow: row wrap;
+          font-weight: bold;
+          text-align: center;
+        }
+        
+        .flex-container > * {
+          padding: 10px;
+          flex: 1 100%;
+        }
+        
+        .main {
+          text-align: left;
+          background: cornflowerblue;
+        }
+        
+        .header {background: coral;}
+        .footer {background: lightgreen;}
+        .aside {background: moccasin;}
+        
+        @media all and (min-width: 768px) {
+          .aside { flex: 1 auto; }
+          .main    { flex: 3 0px; }
+          .aside { order: 1; } 
+          .main    { order: 2; }
+          .footer  { order: 4; }
+        }
+        </style>
+</head>
+<body>
+  <button type="button"><a href="../html1/h-layout.html">Regresar</a> </button>
+<div class="flex-container">
+    <header class="header">Header</header>
+    <aside class="aside">Aside</aside>
+    <article class="main">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem nobis sapiente modi fugit illo, numquam voluptatum ducimus dignissimos iusto ea tempore maiores? Dolores labore voluptate placeat nisi, nulla libero alias!</p>
+    </article>
+    <footer class="footer">Footer</footer>
+  </div>
+  
+</body>
+</html>
